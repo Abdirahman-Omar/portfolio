@@ -1,4 +1,2 @@
-# Titre du site Web ou application
-
-Court texte présentant votre site Web/application.
-# portfolio
+Pas terminer / Not finished
+https://abdirahman-portfolio.netlify.app
