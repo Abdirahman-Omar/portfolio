@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './scss/Entete.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -12,7 +11,7 @@ export default function Entete(props) {
     <header className="Entete">
       <nav>
 
-        <a class="burger menuCache" ><GiHamburgerMenu size={150} /></a>
+        <a href="#listeCompetence" class="burger menuCache" ><GiHamburgerMenu size={150} /></a>
         <i></i>
         <div class="custom-shape-divider-top-1614716716">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -44,4 +43,3 @@ export default function Entete(props) {
 
 }
 
-// onClick={() => setMenuOuvert(!menuOuvert)}
