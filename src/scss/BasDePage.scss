@@ -11,7 +11,7 @@
         padding-top: 17px;
         height: 78px;
         width: 0px;
-        color:  white;
+        color: white;
         font-family: "Proxima Nova";
         font-size: 50px;
         font-weight: 600;
@@ -35,10 +35,10 @@
     // Placement des médias sociaux
     .medias {
         margin: -14px 0px 0 150px;
-         display: grid;
+        display: grid;
         // Espacement des médias sociaux
     }
-   
+
     .linkedin {
         padding: 0 20px 0 0;
         width: 298px;
@@ -62,7 +62,6 @@
         font-size: 30px;
         text-decoration: none;
     }
-  
 }
 
 //---------- Partie du code pour le format mobile-------------------------
@@ -70,14 +69,14 @@
     .BasDePage {
         height: 349px;
         margin: 181px 0 0 -5px;
-    
+
         // Personnalisation de titre du bas de la page
         h1 {
             margin: 0px 0 0 400px;
             padding-top: 17px;
             height: 78px;
             width: 0px;
-            color:  white;
+            color: white;
             font-family: "Proxima Nova";
             font-size: 90px;
             font-weight: 600;
@@ -85,7 +84,7 @@
             line-height: 39px;
             text-align: center;
         }
-    
+
         // Personnalisation la description du bas de la page
         p {
             margin: 40px 0 0 306px;
@@ -96,14 +95,14 @@
             font-size: 32px;
             text-align: center;
         }
-    
+
         // Placement des médias sociaux
         .medias {
             margin: -11px 0px 0 474px;
-             display: grid;
+            display: grid;
             // Espacement des médias sociaux
         }
-       
+
         .linkedin {
             padding: 0 20px 0 0;
             width: 500px;
@@ -121,6 +120,5 @@
             padding: 0 20px 0 0;
             color: black;
         }
-      
     }
 }

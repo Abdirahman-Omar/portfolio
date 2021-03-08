@@ -3,72 +3,72 @@
       "id":"com0001",
       "nom":"HTML",
       "couleur":"orangered",
-      "description":"HTML est mon tout premier langage informatique."
+      "description":"HTML est mon tout premier langage informatique. J'ai appris la base de la programmation"
     },
     {
       "id":"com0002",
       "nom":"CSS",
       "couleur":"blue",
-      "description":"."
+      "description":"Langage dont j'utilise le plus souvent. En effet, j'utilise le style cascade pour faire mes travaux de site web."
     },
     {
       "id":"com0003",
       "nom":"JavaScript",
       "couleur":"burlywood",
-      "description":"."
+      "description":"Au départ, je n'aimais pas JavaScript. Mais plus je continuais d'utiliser Javascript, plus je commencais à aimer de plus en plus ce langage. Il m'a servit à créer un quiz et petit jeu sur l'ordinateur."
     },
     {
       "id":"com0004",
       "nom":"React.Js",
       "couleur":"lightblue",
-      "description":"."
+      "description":"Un langage dont j'ai appris à utiliser récemment. Je pense que c'est mon que je vais utiliser dorénavant ce langage pour mes futurs projets."
     },
     {
       "id":"com0005",
       "nom":"PHP",
       "couleur":"dimgrey",
-      "description":"."
+      "description":"Langage que j'ai appris, mais que je ne l'utilise pas souvent. Je suis une personne que est plutôt de côté Frontend que Backend."
     },
     {
       "id":"com0006",
       "nom":"C#",
       "couleur":"purple",
-      "description":"."
+      "description":"Langage que j'utilise pour faire des jeux avec Unity."
     },
     {
       "id":"com0007",
       "nom":"Unity",
       "couleur":"grey",
-      "description":"."
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."
     },
     {
       "id":"com0008",
       "nom":"VS Code",
       "couleur":"cornflowerblue",
-      "description":"."
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."
     },
     {
       "id":"com0009",
       "nom":"PhotoShop",
       "couleur":"deepskyblue",
-      "description":"."
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."
     },
     {
       "id":"com00010",
       "nom":"Illustrator",
       "couleur":"orange",
-      "description":"."
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."
     },
     {
       "id":"com00011",
       "nom":"Premiere",
       "couleur":"hotpink",
-      "description":"."
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."
     },
     {
       "id":"com00012",
       "nom":"After effects",
       "couleur":"rebeccapurple",
-      "description":"."
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."
     }
   ]

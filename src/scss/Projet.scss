@@ -9,29 +9,29 @@
     text-align: center;
     cursor: pointer;
 
-    img:hover{
-        animation: 4s linear 0s 1 normal forwards running  anim;
+    img:hover {
+        animation: 4s linear 0s 1 normal forwards running anim;
         animation-iteration-count: infinite;
-       }
-    
-       @keyframes anim {
+    }
+
+    @keyframes anim {
         0% {
-          transform: rotateY(0deg);
-          animation-timing-function: linear;
+            transform: rotateY(0deg);
+            animation-timing-function: linear;
         }
         25% {
-          transform: rotateY(-90deg);
-          animation-timing-function: linear;
+            transform: rotateY(-90deg);
+            animation-timing-function: linear;
         }
         75% {
-          transform: rotateY(90.8945deg);
-          animation-timing-function: linear;
+            transform: rotateY(90.8945deg);
+            animation-timing-function: linear;
         }
         100% {
-          transform: rotateY(0.894219deg);
-          animation-timing-function: linear;
+            transform: rotateY(0.894219deg);
+            animation-timing-function: linear;
         }
-      }
+    }
 
     img {
         height: 159px;
@@ -48,7 +48,7 @@
     }
 
     h1 {
-        margin:-95px 0 0 195px;
+        margin: -95px 0 0 195px;
 
         color: white;
         font-family: "Proxima Nova";
@@ -84,7 +84,7 @@
     .description {
         margin: 45px 0 0 50px;
         width: 25vw;
-        font-size: 21px;
+        font-size: 20px;
         font-family: "Rockwell";
     }
 
@@ -96,7 +96,7 @@
     }
 }
 
-.Projet:hover{
+.Projet:hover {
     background-color: white;
 }
 
@@ -128,18 +128,18 @@
 
         h1 {
             margin: 0px 0 0 145px;
-    color: white;
-    font-family: "Proxima Nova";
-    border-bottom: 5px solid white;
-    width: 200vw;
-    font-size: 73px;
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 128px;
-    grid-area: cell2;
+            color: white;
+            font-family: "Proxima Nova";
+            border-bottom: 5px solid white;
+            width: 200vw;
+            font-size: 73px;
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 128px;
+            grid-area: cell2;
         }
 
-        .boite{
+        .boite {
             position: fixed;
             top: 490px;
             left: 65vw;
@@ -149,28 +149,28 @@
             background-color: #444;
             border: 4px solid black;
             z-index: 10;
-           }
-    
-           .imgInterieur{
+        }
+
+        .imgInterieur {
             height: 450px;
             width: 600px;
             margin: 20px 0 0px -20vw;
             /* border-style: solid; */
             border: 4px solid black;
-           }
-    
-           .description{
+        }
+
+        .description {
             margin: 45px 0 0 82px;
             width: 240vw;
-            font-size: 54px;
-           }
-    
-           .close{
+            font-size: 36px;
+        }
+
+        .close {
             position: absolute;
             top: 10px;
             right: 20px;
             height: 135px;
             width: 125px;
-           }
+        }
     }
 }

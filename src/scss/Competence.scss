@@ -1,21 +1,21 @@
-.Competence{
-    height: 244px;
-    margin: 35px 0 0 130px;
-    width: 194px;
-    padding: 5px;
-    background-color: #444;
-    color: white;
-    border: 4px solid black;
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-    
-   img:hover{
-    animation: 4s linear 0s 1 normal forwards running  anim;
-    animation-iteration-count: infinite;
-   }
+.Competence {
+  height: 244px;
+  margin: 35px 0 0 130px;
+  width: 194px;
+  padding: 5px;
+  background-color: #444;
+  color: white;
+  border: 4px solid black;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
 
-   @keyframes anim {
+  img:hover {
+    animation: 4s linear 0s 1 normal forwards running anim;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes anim {
     0% {
       transform: rotateY(0deg);
       animation-timing-function: linear;
@@ -34,144 +34,141 @@
     }
   }
 
-    img{
-        height: 150px;
-        margin: 20px 0 0px 2px;
-    }
+  img {
+    height: 150px;
+    margin: 20px 0 0px 2px;
+  }
 
-    h2{
-        font-family: "Rockwell";
-        font-size: 35px;
-        margin: 30px 0 0 -30px;
-        /* border-style: solid; */
-        border-top: 5px solid black;
-        width: 257px;
-    }
- 
-    h1 {
-        margin: -115px 0 0 195px;
-        color: white;
-        font-family: "Proxima Nova";
-        border-bottom: 5px solid white;
-        width: 11vw;
-        font-size: 40px;
-        font-weight: 800;
-        letter-spacing: 0;
-        line-height: 50px;
-        grid-area: cell2;
-    }
+  h2 {
+    font-family: "Rockwell";
+    font-size: 35px;
+    margin: 30px 0 0 -30px;
+    /* border-style: solid; */
+    border-top: 5px solid black;
+    width: 257px;
+  }
 
-    .boite{
-        position: fixed;
-        top: 165px;
-        left: 35vw;
-        width: 30vw;
-        height: 375px;
-        z-index: 1;
-        background-color: #444;
-        border: 4px solid black;
-        cursor: default;
-       }
+  h1 {
+    margin: -115px 0 0 195px;
+    color: white;
+    font-family: "Proxima Nova";
+    border-bottom: 5px solid white;
+    width: 11vw;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 50px;
+    grid-area: cell2;
+  }
 
-       .imgInterieur{
-        height: 150px;
-        margin: 20px 0 0px -20vw;
-        /* border-style: solid; */
-        border: 4px solid black;
-       }
+  .boite {
+    position: fixed;
+    top: 165px;
+    left: 35vw;
+    width: 30vw;
+    height: 375px;
+    z-index: 1;
+    background-color: #444;
+    border: 4px solid black;
+    cursor: default;
+  }
 
-       .description{
-        margin: 100px 0 0 82px;
-        width: 20vw;
-        font-family: "Rockwell";
-       }
+  .imgInterieur {
+    height: 150px;
+    margin: 20px 0 0px -20vw;
+    /* border-style: solid; */
+    border: 4px solid black;
+  }
 
-       .close{
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        cursor: pointer;
-       }
+  .description {
+    margin: 80px 0 0 40px;
+    width: 25vw;
+    font-family: "Rockwell";
+    font-size: 20px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
 }
 
-.Competence:hover{
-    background-color: white;
+.Competence:hover {
+  background-color: white;
 }
-
-
-
 
 //---------- Partie du code pour le format mobile-------------------------
 @media screen and (max-width: 573px) {
-    .Competence{
-        height: 365px;
-        margin: 35px 0 0 87px;
-        width: 310px;
-        padding: 5px;
-        background-color: #444;
-        color: white;
-        border: 4px solid black;
-        overflow: hidden;
-        text-align: center;
-    
-       
-        img{
-            height: 256px;
-            margin: 20px 0 0px 2px;
-        }
-        h2{
-            font-family: "Rockwell";
-            font-size: 53px;
-            margin: 25px 0 0 -4px;
-            /* border-style: solid; */
-            border-top: 5px solid black;
-            width: 329px;
-        }
-     
-        h1 {
-            margin: 40px 0 0 255px;
-            color: white;
-            font-family: "Proxima Nova";
-            border-bottom: 5px solid white;
-            width: 124vw;
-            font-size: 100px;
-            font-weight: 800;
-            letter-spacing: 0;
-            line-height: 50px;
-            grid-area: cell2;
-        }
-    
-        .boite{
-            position: fixed;
-            top: 490px;
-            left: 65vw;
-            width: 292vw;
-            height: 1065px;
-            z-index: 1;
-            background-color: #444;
-            border: 4px solid black;
-            z-index: 10;
-           }
-    
-           .imgInterieur{
-            height: 360px;
-            margin: 20px 0 0px -20vw;
-            /* border-style: solid; */
-            border: 4px solid black;
-           }
-    
-           .description{
-            margin: 100px 0 0 82px;
-            width: 240vw;
-            font-size: 54px;
-           }
-    
-           .close{
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            height: 135px;
-            width: 125px;
-           }
+  .Competence {
+    height: 365px;
+    margin: 35px 0 0 87px;
+    width: 310px;
+    padding: 5px;
+    background-color: #444;
+    color: white;
+    border: 4px solid black;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+      height: 256px;
+      margin: 20px 0 0px 2px;
     }
+    h2 {
+      font-family: "Rockwell";
+      font-size: 53px;
+      margin: 25px 0 0 -4px;
+      /* border-style: solid; */
+      border-top: 5px solid black;
+      width: 329px;
+    }
+
+    h1 {
+      margin: 40px 0 0 255px;
+      color: white;
+      font-family: "Proxima Nova";
+      border-bottom: 5px solid white;
+      width: 124vw;
+      font-size: 100px;
+      font-weight: 800;
+      letter-spacing: 0;
+      line-height: 50px;
+      grid-area: cell2;
+    }
+
+    .boite {
+      position: fixed;
+      top: 490px;
+      left: 65vw;
+      width: 292vw;
+      height: 1065px;
+      z-index: 1;
+      background-color: #444;
+      border: 4px solid black;
+      z-index: 10;
+    }
+
+    .imgInterieur {
+      height: 360px;
+      margin: 20px 0 0px -20vw;
+      /* border-style: solid; */
+      border: 4px solid black;
+    }
+
+    .description {
+      margin: 100px 0 0 82px;
+      width: 240vw;
+      font-size: 43px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      height: 135px;
+      width: 125px;
+    }
+  }
 }

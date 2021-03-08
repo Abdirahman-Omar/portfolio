@@ -22,35 +22,34 @@
         grid-area: cell2;
     }
 
-   .Liste{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 26px 313px 0 0px;
-    padding: 0;
-   }
+    .Liste {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 26px 313px 0 0px;
+        padding: 0;
+    }
 
-li{
-    width: 400px;
-    margin: 0 0 0 0px;
-    padding: 145px 0 0 37px;
-}
-
+    li {
+        width: 400px;
+        margin: 0 0 0 0px;
+        padding: 145px 0 0 37px;
+    }
 
     // Placement et personnalisation du premier sous-titre.
     .analyse {
-    margin: 140px 0px 0px -55vw;
-    border-bottom: solid;
-    color: white;
-    font-family: "Proxima Nova";
-    font-size: 25px;
-    font-weight: 600;
-    position: absolute;
-    letter-spacing: 2px;
-    line-height: 29px;
+        margin: 140px 0px 0px -55vw;
+        border-bottom: solid;
+        color: white;
+        font-family: "Proxima Nova";
+        font-size: 25px;
+        font-weight: 600;
+        position: absolute;
+        letter-spacing: 2px;
+        line-height: 29px;
     }
-    
+
     // Placement et personnalisation du premier sous-titre.
     .jeu {
         margin: 532px 0px 0px -55vw;
@@ -62,8 +61,8 @@ li{
         position: absolute;
         letter-spacing: 2px;
         line-height: 29px;
-        }
-        // Placement et personnalisation du premier sous-titre.
+    }
+    // Placement et personnalisation du premier sous-titre.
     .model {
         margin: 1025px 0px 0px -55vw;
         border-bottom: solid;
@@ -74,8 +73,8 @@ li{
         position: absolute;
         letter-spacing: 2px;
         line-height: 29px;
-        }
-        // Placement et personnalisation du premier sous-titre.
+    }
+    // Placement et personnalisation du premier sous-titre.
     .design {
         margin: 1506px 0px 0px -55vw;
         border-bottom: solid;
@@ -86,7 +85,7 @@ li{
         position: absolute;
         letter-spacing: 2px;
         line-height: 29px;
-        }
+    }
 }
 
 //---------- Partie du code pour le format mobile-------------------------
@@ -135,38 +134,38 @@ li{
             position: absolute;
             letter-spacing: 2px;
             line-height: 73px;
-            }
+        }
 
-            .model {
-                margin: 2788px 0px 0px 8vw;
-                border-bottom: solid;
-                color: white;
-                font-family: "Proxima Nova";
-                font-size: 50px;
-                width: 318px;
-                font-weight: 600;
-                position: absolute;
-                letter-spacing: 2px;
-                line-height: 54px;
-                }
-                .design {
-                    margin: 4090px 0px 0px 16vw;
-                    border-bottom: solid;
-                    color: white;
-                    font-family: "Proxima Nova";
-                    font-size: 50px;
-                    width: 459px;
-                    font-weight: 600;
-                    position: absolute;
-                    letter-spacing: 2px;
-                    line-height: 50px;
-                    }
-        li{
+        .model {
+            margin: 2788px 0px 0px 8vw;
+            border-bottom: solid;
+            color: white;
+            font-family: "Proxima Nova";
+            font-size: 50px;
+            width: 318px;
+            font-weight: 600;
+            position: absolute;
+            letter-spacing: 2px;
+            line-height: 54px;
+        }
+        .design {
+            margin: 4090px 0px 0px 16vw;
+            border-bottom: solid;
+            color: white;
+            font-family: "Proxima Nova";
+            font-size: 50px;
+            width: 459px;
+            font-weight: 600;
+            position: absolute;
+            letter-spacing: 2px;
+            line-height: 50px;
+        }
+        li {
             width: 400px;
             margin: 236px 0 0 -247px;
             padding: 0px 0 0 0px;
         }
-        .Liste{
+        .Liste {
             list-style: none;
             display: flex;
             /* width: 001px; */
@@ -174,16 +173,14 @@ li{
             justify-content: space-evenly;
             margin: 0px 211px 0 -180px;
             padding: 0;
-           }
+        }
     }
 }
 
-@media (max-width:1189px) and (min-width:574px) {
-
-    .ListeProjet{
-        h1{
+@media (max-width: 1189px) and (min-width: 574px) {
+    .ListeProjet {
+        h1 {
             margin: 60px 100px auto;
-
         }
     }
 }

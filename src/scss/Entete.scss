@@ -39,22 +39,20 @@
         line-height: 0;
         transform: rotate(180deg);
     }
-    
+
     .custom-shape-divider-top-1614716716 svg {
         position: relative;
         display: block;
         width: calc(129% + 1.3px);
         height: 195px;
-        
     }
-    
+
     .custom-shape-divider-top-1614716716 .shape-fill {
-        fill: rgb(0,29,119);
-        background: rgb(0,29,119);
-       background: linear-gradient(3deg, rgba(0,29,119,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
+        fill: rgb(0, 29, 119);
+        background: rgb(0, 29, 119);
+        background: linear-gradient(3deg, rgba(0, 29, 119, 1) 0%, rgba(9, 9, 121, 1) 46%, rgba(0, 212, 255, 1) 100%);
     }
-    
-    
+
     // Placement et personnalisation des ul qui se trouve dans le menu en haut de page
     ul {
         margin: 30vh 0px 0px 0px;
@@ -124,9 +122,6 @@
         .custom-shape-divider-top-1614716716 {
             display: none;
         }
-        
-        
-        
 
         // Placement et personnalisation du bouton burger qui se trouve en haut à droite en format mobile
         .burger {
@@ -177,12 +172,11 @@
             img {
                 display: none;
             }
-          
         }
     }
 }
 
-@media (max-width:1706px) and (min-width:1190px) {
+@media (max-width: 1706px) and (min-width: 1190px) {
     .Entete {
         margin: 0px 0px 0px 0px;
         padding: 30px;
@@ -209,8 +203,7 @@
     }
 }
 
-
-@media (max-width:1189px) and (min-width:574px) {
+@media (max-width: 1189px) and (min-width: 574px) {
     .Entete {
         margin: 0px 0px 0px 0px;
         padding: 30px;
@@ -236,4 +229,3 @@
         }
     }
 }
-

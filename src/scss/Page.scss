@@ -1,19 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
-  
 }
 
 body {
     background: powderblue;
     width: fit-content;
     height: auto;
-    }
+}
 
-    //---------- Partie du code pour le format mobile-------------------------
+//---------- Partie du code pour le format mobile-------------------------
 @media screen and (max-width: 573px) {
     .Page {
         width: 1430px;
     }
-
 }
