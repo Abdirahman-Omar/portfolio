@@ -9,7 +9,7 @@
       "id":"pro0002",
       "nom":"100000 comix",
       "couleur":"green",
-      "description":"Ceci était un projet où le but était de recréer un site web déjâ existant ayant un design à revisé. Je suis fier de mon résultat car c'était la premiere fois que j'ai conceptualiser un site. "
+      "description":"Ceci était un projet où le but était de recréer un site web déjà existant ayant un design à revisé. Je suis fier de mon résultat car c'était la premiere fois que j'ai conceptualiser un site. "
     },
     {
       "id":"pro0003",
@@ -27,24 +27,24 @@
       "id":"pro0005",
       "nom":"Perceuse 3D",
       "couleur":"lightblue",
-      "description":"HTML est mon premier langage informatique."
+      "description":"Un vehicule imaginaire que j'ai conceptualiser pour mon premier cours de 3D au Collège de Maisonneuve. Le thème était de créer de un vehicule en forme d'animaux. Donc, j'ai fait une perceuse en forme d'abeille."
     },
     {
       "id":"pro0006",
       "nom":"Zralok",
       "couleur":"lightblue",
-      "description":"HTML est mon premier langage informatique."
+      "description":""
     },
     {
       "id":"pro0007",
       "nom":"Captain McClean",
       "couleur":"purple",
-      "description":"HTML est mon premier langage informatique."
+      "description":""
     },
     {
       "id":"pro0008",
       "nom":"Épee trio",
       "couleur":"purple",
-      "description":"HTML est mon premier langage informatique."
+      "description":""
     }
   ]

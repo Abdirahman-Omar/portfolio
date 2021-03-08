@@ -209,3 +209,31 @@
     }
 }
 
+
+@media (max-width:1189px) and (min-width:574px) {
+    .Entete {
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+        width: 1189px;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        width: auto;
+        color: #000000;
+        font-family: "Rockwell";
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 17px;
+
+        .custom-shape-divider-top-1614716716 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1189px;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+    }
+}
+

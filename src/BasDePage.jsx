@@ -8,7 +8,7 @@ export default function BasDePage(props) {
   const annee = (new Date()).getFullYear();
   
   return (
-    <div className="BasDePage">
+    <div className="BasDePage"  id="basDePage">
         <h1>Coordonnées</h1>
        <div className="medias">
           <a href="https://www.linkedin.com/in/abdirahman-omar-82a4781ba/" className="linkedin"> <FaLinkedin  size={50} color="black"/>: Abdirahman Omar</a>

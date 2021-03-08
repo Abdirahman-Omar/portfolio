@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './scss/Entete.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import ListeCompetence from './ListeCompetence';
 
 export default function Entete(props) {
 
@@ -11,7 +12,7 @@ export default function Entete(props) {
     <header className="Entete">
       <nav>
 
-        <a class="burger menuCache" onClick={() => setMenuOuvert(!menuOuvert)}><GiHamburgerMenu size={150} /></a>
+        <a class="burger menuCache" ><GiHamburgerMenu size={150} /></a>
         <i></i>
         <div class="custom-shape-divider-top-1614716716">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -21,9 +22,9 @@ export default function Entete(props) {
 
         <ul className="navUtil">
           <li><a >Introduction</a></li>
-          <li><a >Compétences</a></li>
-          <li><a > Projets</a></li>
-          <li><a>Coordonnées</a></li>
+          <li><a href="#listeCompetence">Compétences</a></li>
+          <li><a href="#listeProjet"> Projets</a></li>
+          <li><a href="#basDePage">Coordonnées</a></li>
         </ul>
 
         {/* on ouvre ou on ferme le menu selon l'état */}
@@ -42,3 +43,5 @@ export default function Entete(props) {
   );
 
 }
+
+// onClick={() => setMenuOuvert(!menuOuvert)}

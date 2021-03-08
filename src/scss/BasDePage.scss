@@ -13,7 +13,7 @@
         width: 0px;
         color:  white;
         font-family: "Proxima Nova";
-        font-size: 32px;
+        font-size: 50px;
         font-weight: 600;
         letter-spacing: 0;
         line-height: 39px;
@@ -22,10 +22,12 @@
 
     // Personnalisation la description du bas de la page
     p {
-        margin: 75px 0 0 745px;
+        margin: 50px 0 0 745px;
         height: 22px;
         width: 416px;
-        color: #000000;
+        color: white;
+        font-size: 20px;
+        color: white;
         font-family: "Proxima Nova";
         text-align: center;
     }
@@ -67,8 +69,6 @@
 @media screen and (max-width: 573px) {
     .BasDePage {
         height: 349px;
-        /* width: 1900px; */
-        background-color: slateblue;
         margin: 181px 0 0 -5px;
     
         // Personnalisation de titre du bas de la page
