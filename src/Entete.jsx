@@ -20,20 +20,20 @@ export default function Entete(props) {
 </div>
 
         <ul className="navUtil">
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#">Compétences</a></li>
-          <li><a href="#"> Projets</a></li>
-          <li><a href="#">Coordonnées</a></li>
+          <li><a >Introduction</a></li>
+          <li><a >Compétences</a></li>
+          <li><a > Projets</a></li>
+          <li><a>Coordonnées</a></li>
         </ul>
 
         {/* on ouvre ou on ferme le menu selon l'état */}
         {menuOuvert && (<div className="leMenu">
           <ul>
 
-            <li><a href="#">Introduction</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#"> Projets</a></li>
-            <li><a href="#">Coordonnées</a></li>
+            <li><a >Introduction</a></li>
+            <li><a >Compétences</a></li>
+            <li><a > Projets</a></li>
+            <li><a >Coordonnées</a></li>
           </ul>
         </div>)}
 
