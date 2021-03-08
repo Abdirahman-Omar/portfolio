@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './scss/Entete.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import ListeCompetence from './ListeCompetence';
+
 
 export default function Entete(props) {
 
   // gestion de l'état du menu mobile 
-  const [menuOuvert, setMenuOuvert] = useState(false);
+  
 
   return (
     <header className="Entete">
@@ -21,22 +21,22 @@ export default function Entete(props) {
         </div>
 
         <ul className="navUtil">
-          <li><a >Introduction</a></li>
+          <li><a href="#listeCompetence">Introduction</a></li>
           <li><a href="#listeCompetence">Compétences</a></li>
           <li><a href="#listeProjet"> Projets</a></li>
           <li><a href="#basDePage">Coordonnées</a></li>
         </ul>
 
         {/* on ouvre ou on ferme le menu selon l'état */}
-        {menuOuvert && (<div className="leMenu">
+       <div className="leMenu">
           <ul>
 
-            <li><a >Introduction</a></li>
-            <li><a >Compétences</a></li>
-            <li><a > Projets</a></li>
-            <li><a >Coordonnées</a></li>
+            <li><a href="#listeCompetence">Introduction</a></li>
+            <li><a href="#listeCompetence">Compétences</a></li>
+            <li><a href="#listeCompetence"> Projets</a></li>
+            <li><a href="#listeCompetence">Coordonnées</a></li>
           </ul>
-        </div>)}
+        </div>
 
       </nav>
     </header>
