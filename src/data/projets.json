@@ -1,0 +1,50 @@
+[
+    {
+      "id":"pro0001",
+      "nom":"Site du TIM",
+      "couleur":"green",
+      "description":"Un de mes grand projets que j'ai fait avec mon équipe de web. Nous avions pour but de refaire le site web de la technique d'intégration en multimédia de Maisonneuve."
+    },
+    {
+      "id":"pro0002",
+      "nom":"100000 comix",
+      "couleur":"green",
+      "description":"Ceci était un projet où le but était de recréer un site web déjâ existant ayant un design à revisé. Je suis fier de mon résultat car c'était la premiere fois que j'ai conceptualiser un site. "
+    },
+    {
+      "id":"pro0003",
+      "nom":"Gundomize",
+      "couleur":"red",
+      "description":"Gundomize est un jeu de tir à la premiere personne jouant à deux personnes. Le but du jeu est est de marquer le plus de point en éliminant son adversaire avant temps imparti. Le 'twist', les armes de chaque joueurs changent aléatoirement, rendant ainsi la jouabilité du jeu dynamique. Je n'ai pas pu créer ce jeu sans une équipe bien organiser. "
+    },
+    {
+      "id":"pro0004",
+      "nom":"Frank le trancheur",
+      "couleur":"red",
+      "description":"Ceci est mon tout premier jeu créer à partir de Unity. Frank le trancheur est un jeu hack and slash "
+    },
+    {
+      "id":"pro0005",
+      "nom":"Perceuse 3D",
+      "couleur":"lightblue",
+      "description":"HTML est mon premier langage informatique."
+    },
+    {
+      "id":"pro0006",
+      "nom":"Zralok",
+      "couleur":"lightblue",
+      "description":"HTML est mon premier langage informatique."
+    },
+    {
+      "id":"pro0007",
+      "nom":"Captain McClean",
+      "couleur":"purple",
+      "description":"HTML est mon premier langage informatique."
+    },
+    {
+      "id":"pro0008",
+      "nom":"Épee trio",
+      "couleur":"purple",
+      "description":"HTML est mon premier langage informatique."
+    }
+  ]

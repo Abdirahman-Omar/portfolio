@@ -1,0 +1,211 @@
+// Code de style pour le menu en haut de la page web
+
+.Entete {
+    margin: 0px 0px 0px 0px;
+    padding: 30px;
+    width: 1920px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    width: auto;
+    color: #000000;
+    font-family: "Rockwell";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 17px;
+
+    // Lorsque nous sommes en format desktop, il faut cacher le menu burger
+    .menuCache {
+        display: none;
+    }
+
+    // Positionner le menu toggle en haut à gauche lorsque nous sommes en format mobile
+    .leMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 95%;
+        z-index: 100;
+        background-color: rgb(243, 199, 53);
+    }
+
+    .custom-shape-divider-top-1614716716 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: -webkit-fill-available;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-top-1614716716 svg {
+        position: relative;
+        display: block;
+        width: calc(129% + 1.3px);
+        height: 195px;
+        
+    }
+    
+    .custom-shape-divider-top-1614716716 .shape-fill {
+        fill: rgb(0,29,119);
+        background: rgb(0,29,119);
+       background: linear-gradient(3deg, rgba(0,29,119,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
+    }
+    
+    
+    // Placement et personnalisation des ul qui se trouve dans le menu en haut de page
+    ul {
+        margin: 30vh 0px 0px 0px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        font-family: "Rockwell";
+
+        //Ajout d'un curseur lorsque nous survolons les textes dans le menu
+        li {
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        // Espacement entre les éléments du menu
+        li:not(:last-of-type) {
+            padding-right: 15px;
+        }
+        li:not(:first-of-type) {
+            padding-left: 15px;
+        }
+        a {
+            color: white;
+            font-family: "Rockwell";
+            text-decoration: none;
+        }
+        &.navUtil {
+            margin: 0 0 0 65vw;
+        }
+
+        // Placement du logo en haut à gauche
+        .logo {
+            float: left;
+            margin: 0px 522px 0 0px;
+        }
+
+        // Redimensionner le logo
+        img {
+            height: auto;
+            width: auto;
+            max-width: 180px;
+            max-height: 77px;
+        }
+    }
+}
+
+//---------- Partie du code pour le format mobile-------------------------
+@media screen and (max-width: 573px) {
+    .Entete {
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+        width: 100%;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        width: auto;
+        color: #000000;
+        font-family: "Rockwell";
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 17px;
+
+        // Lorsque nous sommes en format mobile, il faut afficher le menu burger
+        .menuCache {
+            display: flex;
+        }
+        .custom-shape-divider-top-1614716716 {
+            display: none;
+        }
+        
+        
+        
+
+        // Placement et personnalisation du bouton burger qui se trouve en haut à droite en format mobile
+        .burger {
+            position: fixed;
+            top: 70px;
+            right: -60vw;
+            width: 100vw;
+            height: 102vh;
+            color: black;
+            z-index: 2;
+        }
+
+        // Placement et personnalisation des ul qui se trouve dans le menu en format mobile
+        ul {
+            padding: 0;
+            list-style: none;
+            font-family: "Proxima Nova";
+            display: block;
+
+            li:first-of-type {
+                padding: 43px 0px 1px 60px;
+                width: 415px;
+                line-height: 50px;
+                font-size: 41px;
+            }
+
+            a {
+                color: #000000;
+                font-family: "Proxima Nova";
+                text-decoration: none;
+                padding: 0px 0px 0px 60px;
+            }
+            li {
+                padding: 90px 7px 0px 0px;
+                font-size: 45px;
+            }
+
+            &.navUtil {
+                margin-left: auto;
+                display: none;
+            }
+            // Placement du logo en haut à gauche
+            .logo {
+                display: none;
+            }
+
+            // Redimensionner le logo
+            img {
+                display: none;
+            }
+          
+        }
+    }
+}
+
+@media (max-width:1706px) and (min-width:1190px) {
+    .Entete {
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+        width: 100%;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        width: auto;
+        color: #000000;
+        font-family: "Rockwell";
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 17px;
+
+        .custom-shape-divider-top-1614716716 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: -webkit-fill-available;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+    }
+}
+

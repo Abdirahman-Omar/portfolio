@@ -1,0 +1,180 @@
+// Code de style pour la partie du services dans le site web
+
+// Placement de la partie services avec un display grid de deux colonnes et de quatre rangés
+.ListeProjet {
+    margin: 235px 0px 0 7vw;
+    width: 85vw;
+    display: flex;
+    background: slategray;
+    justify-content: center;
+    list-style: none;
+    border-style: solid;
+
+    // Placement et personnalisation du titre qui se trouve au milieu dans la partie Projet.
+    h1 {
+        margin: 24px 0 0 104px;
+        color: white;
+        font-family: "Proxima Nova";
+        font-size: 70px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 50px;
+        grid-area: cell2;
+    }
+
+   .Liste{
+    list-style: none;
+    display: flex;
+    /* width: 001px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px 139px 0 0px;
+    padding: 0;
+   }
+
+li{
+    width: 400px;
+    margin: 0 0 0 0px;
+    padding: 145px 0 0 37px;
+}
+
+
+    // Placement et personnalisation du premier sous-titre.
+    .analyse {
+    margin: 105px 0px 0px -55vw;
+    border-bottom: solid;
+    color: white;
+    font-family: "Proxima Nova";
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    letter-spacing: 2px;
+    line-height: 29px;
+    }
+    
+    // Placement et personnalisation du premier sous-titre.
+    .jeu {
+        margin: 532px 0px 0px -55vw;
+        border-bottom: solid;
+        color: white;
+        font-family: "Proxima Nova";
+        font-size: 25px;
+        font-weight: 600;
+        position: absolute;
+        letter-spacing: 2px;
+        line-height: 29px;
+        }
+        // Placement et personnalisation du premier sous-titre.
+    .model {
+        margin: 1025px 0px 0px -55vw;
+        border-bottom: solid;
+        color: white;
+        font-family: "Proxima Nova";
+        font-size: 25px;
+        font-weight: 600;
+        position: absolute;
+        letter-spacing: 2px;
+        line-height: 29px;
+        }
+        // Placement et personnalisation du premier sous-titre.
+    .design {
+        margin: 1506px 0px 0px -55vw;
+        border-bottom: solid;
+        color: white;
+        font-family: "Proxima Nova";
+        font-size: 25px;
+        font-weight: 600;
+        position: absolute;
+        letter-spacing: 2px;
+        line-height: 29px;
+        }
+}
+
+//---------- Partie du code pour le format mobile-------------------------
+@media screen and (max-width: 573px) {
+    // Placement de la partie Projet avec un display grid d'une colonne et de quatre rangés
+    .ListeProjet {
+        margin: 280px 0px 0 246px;
+        width: 265vw;
+
+        // Placement et personnalisation du titre qui se trouve au milieu dans la partie services.
+        h1 {
+            margin: 110px 0 0 300px;
+            height: 100px;
+            width: 1140px;
+            color: white;
+            font-family: "Proxima Nova";
+            font-size: 90px;
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 50px;
+            grid-area: cell1;
+        }
+
+        // Placement et personnalisation du premier sous-titre.
+        .analyse {
+            margin: 184px 0px 0px 65px;
+            height: 50px;
+            width: 477px;
+            /* color: #000000; */
+            font-family: "Proxima Nova";
+            font-size: 50px;
+            font-weight: 600;
+            letter-spacing: 0;
+            line-height: 44px;
+            grid-area: cell2;
+        }
+
+        .jeu {
+            margin: 1474px 0px 0px 13vw;
+            border-bottom: solid;
+            width: 175vw;
+            color: white;
+            font-family: "Proxima Nova";
+            font-size: 50px;
+            font-weight: 600;
+            position: absolute;
+            letter-spacing: 2px;
+            line-height: 73px;
+            }
+
+            .model {
+                margin: 2788px 0px 0px 8vw;
+                border-bottom: solid;
+                color: white;
+                font-family: "Proxima Nova";
+                font-size: 50px;
+                width: 318px;
+                font-weight: 600;
+                position: absolute;
+                letter-spacing: 2px;
+                line-height: 54px;
+                }
+                .design {
+                    margin: 4090px 0px 0px 16vw;
+                    border-bottom: solid;
+                    color: white;
+                    font-family: "Proxima Nova";
+                    font-size: 50px;
+                    width: 459px;
+                    font-weight: 600;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    line-height: 50px;
+                    }
+        li{
+            width: 400px;
+            margin: 236px 0 0 -247px;
+            padding: 0px 0 0 0px;
+        }
+        .Liste{
+            list-style: none;
+            display: flex;
+            /* width: 001px; */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 0px 211px 0 -180px;
+            padding: 0;
+           }
+    }
+}

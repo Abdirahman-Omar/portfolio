@@ -1,0 +1,187 @@
+// Code de style pour la partie du services dans le site web
+
+// Placement de la partie services avec un display grid de deux colonnes et de quatre rangés
+.ListeCompetence {
+    margin: 320px 0px 0 7vw;
+    width: 85vw;
+    background: slategray;
+// background: linear-gradient(0deg, rgba(0,119,26,1) 0%, rgba(9,121,95,1) 33%, rgba(1,180,36,0.7931547619047619) 100%);
+    justify-content: center;
+    list-style: none;
+    border-style: solid;
+
+    // Placement et personnalisation du titre qui se trouve au milieu dans la partie Competence.
+    h1 {
+        margin: 38px 0 0 60px;
+        color: white;
+        font-family: "Proxima Nova";
+        font-size: 70px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 50px;
+        grid-area: cell2;
+    }
+
+   .Liste{
+    list-style: none;
+    display: flex;
+    /* width: 001px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px 139px 0 0px;
+    padding: 0 0 30px 0px;
+   }
+
+li{
+    width: 400px;
+    margin: 0 0 0 0px;
+    padding: 145px 0 0 37px;
+}
+.appli{
+    margin: 980px 0px 0px 130px;
+    border-bottom: solid;
+    color: white;
+    font-family: "Proxima Nova";
+    width: 285px;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    letter-spacing: 2px;
+    line-height: 29px;
+}
+
+    // Placement et personnalisation du premier sous-titre.
+    .analyse {
+        margin: 65px 0px 0px 136px;
+    border-bottom: solid;
+    color: white;
+    font-family: "Proxima Nova";
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    letter-spacing: 2px;
+    line-height: 29px;
+    }
+
+}
+
+//---------- Partie du code pour le format mobile-------------------------
+@media screen and (max-width: 573px) {
+    // Placement de la partie Competence avec un display grid d'une colonne et de quatre rangés
+    .ListeCompetence {
+        margin: 680px 0px 0 240px;
+        width: 265vw;
+
+        // Placement et personnalisation du titre qui se trouve au milieu dans la partie services.
+        h1 {
+            margin: 90px 0 0 140px;
+            height: 100px;
+            width: 1140px;
+            color: white;
+            font-family: "Proxima Nova";
+            font-size: 90px;
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 50px;
+            grid-area: cell1;
+        }
+
+        .Liste{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 0px 139px 0 0px;
+            padding: 0 0 30px 0px;
+           }
+
+        // Placement et personnalisation du premier sous-titre.
+        .analyse {
+            margin: 25px 0px 0px 136px;
+            border-bottom: solid;
+            color: white;
+            width: 620px;
+            font-family: "Proxima Nova";
+            font-size: 50px;
+            font-weight: 600;
+            position: absolute;
+            letter-spacing: 2px;
+            line-height: 47px;
+        }
+        .appli{
+            margin: 1080vw 0px 0px 260px;
+            border-bottom: solid;
+            color: white;
+            width: 330px;
+            font-family: "Proxima Nova";
+            font-size: 50px;
+            font-weight: 600;
+            position: absolute;
+            letter-spacing: 2px;
+            line-height: 47px;
+        }
+    }
+}
+
+
+
+@media (max-width:1706px) and (min-width:1190px) {
+    .ListeCompetence{
+                .appli{
+                    margin: 1390px 0px 0px 175px;
+                    border-bottom: solid;
+                    color: white;
+                    font-family: "Proxima Nova";
+                    width: 232px;
+                    font-size: 25px;
+                    font-weight: 600;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    line-height: 46px;
+                }
+        }
+}
+
+
+@media (max-width:1189px) and (min-width:574px) {
+    .ListeCompetence{
+                .appli{
+                    margin: 2754px 0px 0px 254px;
+                    border-bottom: solid;
+                    color: white;
+                    font-family: "Proxima Nova";
+                    width: 310px;
+                    font-size: 50px;
+                    font-weight: 600;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    line-height: 46px;
+                }
+                h1 {
+                    margin: 90px 0 0 145px;
+                    height: 100px;
+                    width: 1140px;
+                    color: white;
+                    font-family: "Proxima Nova";
+                    font-size: 90px;
+                    font-weight: 800;
+                    letter-spacing: 0;
+                    line-height: 50px;
+                    grid-area: cell1;
+                }
+
+                .analyse {
+                    margin: 100px 0px 0px 195px;
+                    border-bottom: solid;
+                    color: white;
+                    width: 472px;
+                    font-family: "Proxima Nova";
+                    font-size: 38px;
+                    font-weight: 600;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    line-height: 47px;
+                }
+        
+        }
+}

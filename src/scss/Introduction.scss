@@ -1,0 +1,196 @@
+// Code de style pour la section d'introduction de la page web
+
+// Placement du section d'introduction avec un display grid de deux colonnes et de deux rangés
+.Intro {
+    margin: 150px 0px 0 6vw;
+    height: 20vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px 0px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "cell1 cell2"
+        "cell3 .";
+
+    // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
+    h1 {
+        margin: 20px 0 0 1vw;
+        color: #000000;
+        font-family: "Rockwell";
+        font-size: 70px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 50px;
+        grid-area: cell1;
+    }
+
+    h2 {
+        margin: 520px 0 0 360px;
+        color: #000000;
+        font-family: "Rockwell";
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 50px;
+        grid-area: cell2;
+    }
+
+    // Placement et personnalisation de la description qui se trouve dans la section d'introduction
+    .description {
+        margin: 150px 0px 0 0px;
+        grid-area: cell1;
+        height: 208px;
+        width: 575px;
+        background-color: #009640;
+        color: white;
+        font-family: "Rockwell";
+        border: 5px solid white;
+        border-style: double;
+        padding: 0 0 0 15px;
+        font-size: 26px;
+        font-weight: 100;
+        letter-spacing: 0;
+        line-height: 40px;
+        z-index: 2;
+
+    }
+
+    // Placement de l'image qui se trouve dans la section d'introduction
+    img {
+        grid-area: cell2;
+        margin: 0px 0 0 17vw;
+    }
+
+    @keyframes img {
+        0% {
+          transform: rotateY(0deg);
+          animation-timing-function: linear;
+        }
+        25% {
+          transform: rotateY(-90deg);
+          animation-timing-function: linear;
+        }
+        75% {
+          transform: rotateY(90.8945deg);
+          animation-timing-function: linear;
+        }
+        100% {
+          transform: rotateY(0.894219deg);
+          animation-timing-function: linear;
+        }
+      }
+      img {
+        animation: 8s linear 0s 1 normal forwards running  img;
+        animation-iteration-count: infinite;
+
+      }
+
+
+    // Placement et personnalisation du bouton qui se trouve dans la section d'introduction
+    button {
+        border: white;
+        border-radius: 6%;
+        color: white;
+        background-color: orange;
+        height: 41px;
+        width: 175px;
+        margin: -150px 0px 0px 50px;
+        grid-area: cell3;
+    }
+
+    // Placement du texte de contact qui se trouve dans la section d'introduction
+    .contact {
+        grid-area: cell3;
+        margin: -100px 0px 0px 50px;
+        color: red;
+    }
+}
+
+//---------- Partie du code pour le format mobile-------------------------
+@media screen and (max-width: 573px) {
+    // Placement du section d'introduction avec un display grid d'une colonne et de deux rangés
+    .Intro {
+        margin: 120px 0px 0 310px;
+        height: 440px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "cell1"
+            "cell2";
+
+        // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
+        h1 {
+            height: 100px;
+            /* width: 917px; */
+            margin: 130px 0 0 40px;
+            color: #000000;
+            font-family: "Proxima Nova";
+            font-size: 130px;
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 83px;
+            grid-area: cell1;
+        }
+
+        // Placement et personnalisation de la description qui se trouve dans la section d'introduction
+        .description {
+            margin: 66px 0px 0 -125px;
+            grid-area: cell2;
+            height: 525px;
+            width: 995px;
+            color: white;
+            background-color: #009640;
+            font-family: "Proxima Nova";
+            font-size: 68px;
+            font-weight: 100;
+            letter-spacing: 0;
+            line-height: 78px;
+        }
+
+        // Placement de l'image qui se trouve dans la section d'introduction
+        img {
+            margin: 0px 0 0 190px;
+            display: none;
+        }
+
+
+        // Placement du texte de contact qui se trouve dans la section d'introduction
+        .contact {
+            grid-area: cell2;
+            margin: 393px 0px 0px 30px;
+            color: red;
+            font-size: 45px;
+        }
+    }
+}
+
+
+@media (max-width:1189px) and (min-width:574px) { 
+    .Intro {
+        margin: 120px 0px 0 310px;
+        height: 440px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "cell1"
+            "cell2";
+
+
+        // Placement de l'image qui se trouve dans la section d'introduction
+        img {
+            display: none;
+        }
+
+     // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
+     h2 {
+        display: none;
+    }
+
+        
+    }
+}

@@ -1,0 +1,126 @@
+// Code de style pour le bas de la page web
+
+.BasDePage {
+    height: 349px;
+    background: darkslategrey;
+    margin: 181px 0 0 -5px;
+
+    // Personnalisation de titre du bas de la page
+    h1 {
+        margin: 0px 0 0 200px;
+        padding-top: 17px;
+        height: 78px;
+        width: 0px;
+        color:  white;
+        font-family: "Proxima Nova";
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    // Personnalisation la description du bas de la page
+    p {
+        margin: 75px 0 0 745px;
+        height: 22px;
+        width: 416px;
+        color: #000000;
+        font-family: "Proxima Nova";
+        text-align: center;
+    }
+
+    // Placement des médias sociaux
+    .medias {
+        margin: -14px 0px 0 150px;
+         display: grid;
+        // Espacement des médias sociaux
+    }
+   
+    .linkedin {
+        padding: 0 20px 0 0;
+        width: 298px;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    .outlook {
+        padding: 0 20px 0 0;
+        width: 365px;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    .gmail {
+        padding: 0 20px 0 0;
+        width: 438px;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+    }
+  
+}
+
+//---------- Partie du code pour le format mobile-------------------------
+@media screen and (max-width: 573px) {
+    .BasDePage {
+        height: 349px;
+        /* width: 1900px; */
+        background-color: slateblue;
+        margin: 181px 0 0 -5px;
+    
+        // Personnalisation de titre du bas de la page
+        h1 {
+            margin: 0px 0 0 400px;
+            padding-top: 17px;
+            height: 78px;
+            width: 0px;
+            color:  white;
+            font-family: "Proxima Nova";
+            font-size: 90px;
+            font-weight: 600;
+            letter-spacing: 0;
+            line-height: 39px;
+            text-align: center;
+        }
+    
+        // Personnalisation la description du bas de la page
+        p {
+            margin: 40px 0 0 306px;
+            height: 22px;
+            width: 210vw;
+            color: #000000;
+            font-family: "Proxima Nova";
+            font-size: 32px;
+            text-align: center;
+        }
+    
+        // Placement des médias sociaux
+        .medias {
+            margin: -11px 0px 0 474px;
+             display: grid;
+            // Espacement des médias sociaux
+        }
+       
+        .linkedin {
+            padding: 0 20px 0 0;
+            width: 500px;
+            color: white;
+            font-size: 55px;
+            text-decoration: none;
+        }
+
+        .outlook {
+            padding: 0 20px 0 0;
+            color: black;
+        }
+
+        .gmail {
+            padding: 0 20px 0 0;
+            color: black;
+        }
+      
+    }
+}
