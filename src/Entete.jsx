@@ -27,7 +27,7 @@ export default function Entete(props) {
         </ul>
 
         {/* on ouvre ou on ferme le menu selon l'état */}
-       <div className="leMenu">
+       {/* <div className="leMenu">
           <ul>
 
             <li><a href="#listeCompetence">Introduction</a></li>
@@ -35,7 +35,7 @@ export default function Entete(props) {
             <li><a href="#listeCompetence"> Projets</a></li>
             <li><a href="#listeCompetence">Coordonnées</a></li>
           </ul>
-        </div>
+        </div> */}
 
       </nav>
     </header>
