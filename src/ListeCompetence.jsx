@@ -2,7 +2,7 @@ import "./scss/ListeCompetence.scss";
 import Competence from './Competence';
 import tabCompetence from "./data/competence.json";
 import tabApplication from "./data/applications.json";
-import { useState } from 'react';
+
 import React from "react"
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -10,7 +10,7 @@ import "keen-slider/keen-slider.min.css";
 export default function ListeCompetence(props) {
 
 // utilisation de la librairie keen-slider  pour le carousel
-const [currentSlide, setCurrentSlide] = useState(0)
+
 
 
 const [pause, setPause] = React.useState(false)
@@ -30,7 +30,7 @@ const [sliderRef, slider] = useKeenSlider({
     },
 })
 
-const [sliderRef2, slider2] = useKeenSlider({
+const [sliderRef2] = useKeenSlider({
   slidesPerView: 3,
   spacing: 15,
   initial: 0,
@@ -44,25 +44,25 @@ const [sliderRef2, slider2] = useKeenSlider({
     },
 })
 
-// React.useEffect(() => {
-//   sliderRef.current.addEventListener("mouseover", () => {
-//     setPause(true)
-//   })
-//   sliderRef.current.addEventListener("mouseout", () => {
-//     setPause(false)
-//   })
-// }, [sliderRef])
+React.useEffect(() => {
+  sliderRef.current.addEventListener("mouseover", () => {
+    setPause(true)
+  })
+  sliderRef.current.addEventListener("mouseout", () => {
+    setPause(false)
+  })
+}, [sliderRef])
 
-// React.useEffect(() => {
-//   timer.current = setInterval(() => {
-//     if (!pause && slider) {
-//       slider.next()
-//     }
-//   }, 3000)
-//   return () => {
-//     clearInterval(timer.current)
-//   }
-// }, [pause, slider])
+React.useEffect(() => {
+  timer.current = setInterval(() => {
+    if (!pause && slider) {
+      slider.next()
+    }
+  }, 3000)
+  return () => {
+    clearInterval(timer.current)
+  }
+}, [pause, slider])
 
 // Carousel 2
 

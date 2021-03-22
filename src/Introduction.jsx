@@ -3,8 +3,6 @@ import "./scss/Introduction.scss";
 
 export default function Introduction(props) {
 
-  const parts= 50;
-
   return (
     <div className="Intro" id="Introduction">
       <h1>Salut!</h1>
