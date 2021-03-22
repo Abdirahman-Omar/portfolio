@@ -19,8 +19,10 @@ export default function Entete(props) {
           </svg>
         </div>
 
+       
+
         <ul className="navUtil">
-          <li><a href="#listeCompetence">Introduction</a></li>
+          <li><a href="#Introduction">Introduction</a></li>
           <li><a href="#listeCompetence">Compétences</a></li>
           <li><a href="#listeProjet"> Projets</a></li>
           <li><a href="#basDePage">Coordonnées</a></li>

@@ -8,6 +8,19 @@ import BasDePage from './BasDePage'
 export default function Page() {
   return (
     <div className="Page">
+          <ul class="circles">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+          </ul>
+
        <Entete></Entete>
        <Introduction/>
        <ListeCompetence/>

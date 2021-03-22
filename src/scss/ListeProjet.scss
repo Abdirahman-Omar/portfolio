@@ -2,13 +2,13 @@
 
 // Placement de la partie services avec un display grid de deux colonnes et de quatre rangés
 .ListeProjet {
-    margin: 0px auto;
+    margin: 0px auto; 
     width: 85vw;
     display: flex;
-    background: slategray;
-    justify-content: center;
+    
+    justify-content: flex-start;
     list-style: none;
-    border-style: solid;
+   
 
     // Placement et personnalisation du titre qui se trouve au milieu dans la partie Projet.
     h1 {
@@ -25,9 +25,10 @@
     .Liste {
         list-style: none;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 26px 313px 0 0px;
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        /* margin: 26px 313px 0 0px; */
         padding: 0;
     }
 
@@ -92,8 +93,8 @@
 @media screen and (max-width: 573px) {
     // Placement de la partie Projet avec un display grid d'une colonne et de quatre rangés
     .ListeProjet {
-        margin: 280px 0px 0 246px;
-        width: 265vw;
+        margin: 280px 0px 0 246px; 
+    width: 100vw;
 
         // Placement et personnalisation du titre qui se trouve au milieu dans la partie services.
         h1 {
@@ -178,9 +179,9 @@
 }
 
 @media (max-width: 1189px) and (min-width: 574px) {
-    .ListeProjet {
-        h1 {
-            margin: 60px 100px auto;
-        }
-    }
+    // .ListeProjet {
+    //     h1 {
+    //         margin: 60px 100px auto;
+    //     }
+    // }
 }

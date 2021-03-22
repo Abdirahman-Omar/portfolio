@@ -1,16 +1,17 @@
 // Code de style pour le menu en haut de la page web
 
 .Entete {
-    margin: 0px 0px 0px 0px;
-    padding: 30px;
-    width: 1920px;
+    margin: 2vw 50px 0px 0px;
+    padding: 0px 0 0 0;
+    /* width: 100vw; */
     background-color: none;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     width: auto;
     color: #000000;
     font-family: "Rockwell";
-    font-size: 20px;
+    font-size: 2em;
     letter-spacing: 0;
     line-height: 17px;
 
@@ -19,6 +20,7 @@
         display: none;
     }
 
+      
     // Positionner le menu toggle en haut à gauche lorsque nous sommes en format mobile
     .leMenu {
         position: fixed;
@@ -34,7 +36,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: -webkit-fill-available;
+        width: 100%;
         overflow: hidden;
         line-height: 0;
         transform: rotate(180deg);
@@ -45,10 +47,11 @@
         display: block;
         width: calc(129% + 1.3px);
         height: 195px;
+        width: 100%;
     }
 
     .custom-shape-divider-top-1614716716 .shape-fill {
-        fill: rgb(0, 29, 119);
+        fill: #001d78ad;
         background: rgb(0, 29, 119);
         background: linear-gradient(3deg, rgba(0, 29, 119, 1) 0%, rgba(9, 9, 121, 1) 46%, rgba(0, 212, 255, 1) 100%);
     }
@@ -81,6 +84,7 @@
         }
         &.navUtil {
             margin: 0 0 0 65vw;
+            font-size: 1.5vw;
         }
 
         // Placement du logo en haut à gauche
@@ -177,55 +181,9 @@
 }
 
 @media (max-width: 1706px) and (min-width: 1190px) {
-    .Entete {
-        margin: 0px 0px 0px 0px;
-        padding: 30px;
-        width: 100%;
-        background-color: none;
-        display: flex;
-        align-items: center;
-        width: auto;
-        color: #000000;
-        font-family: "Rockwell";
-        font-size: 20px;
-        letter-spacing: 0;
-        line-height: 17px;
-
-        .custom-shape-divider-top-1614716716 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: -webkit-fill-available;
-            overflow: hidden;
-            line-height: 0;
-            transform: rotate(180deg);
-        }
-    }
+    
 }
 
 @media (max-width: 1189px) and (min-width: 574px) {
-    .Entete {
-        margin: 0px 0px 0px 0px;
-        padding: 30px;
-        width: 1189px;
-        background-color: none;
-        display: flex;
-        align-items: center;
-        width: auto;
-        color: #000000;
-        font-family: "Rockwell";
-        font-size: 20px;
-        letter-spacing: 0;
-        line-height: 17px;
-
-        .custom-shape-divider-top-1614716716 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 1189px;
-            overflow: hidden;
-            line-height: 0;
-            transform: rotate(180deg);
-        }
-    }
+    
 }

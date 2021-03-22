@@ -3,7 +3,8 @@
 // Placement du section d'introduction avec un display grid de deux colonnes et de deux rangés
 .Intro {
     margin: 150px 0px 0 6vw;
-    height: 20vw;
+    height: 50vh;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -16,7 +17,7 @@
     // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
     h1 {
         margin: 20px 0 0 1vw;
-        color: #000000;
+        color: white;
         font-family: "Rockwell";
         font-size: 70px;
         font-weight: 800;
@@ -26,63 +27,41 @@
     }
 
     h2 {
-        margin: 525px auto;
-        color: #000000;
-        font-family: "Rockwell";
-        font-size: 40px;
-        font-weight: 800;
-        letter-spacing: 0;
-        line-height: 50px;
-        grid-area: cell2;
+    color: #000000;
+    font-family: "Rockwell";
+    font-size: 5em;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 0vh;
+    grid-area: cell2;
+    display: none;
     }
 
     // Placement et personnalisation de la description qui se trouve dans la section d'introduction
     .description {
-        margin: 150px 0px 0 0px;
-        grid-area: cell1;
-        height: 208px;
-        width: 575px;
-        background-color: #009640;
+        margin: 17vh 0vw 0px -32vw;
+        grid-area: cell2;
+        height: auto;
+        width: 51vw;
         color: white;
         font-family: "Rockwell";
-        border: 5px solid white;
-        border-style: double;
         padding: 0 0 0 15px;
-        font-size: 26px;
+        font-size: 3vw;
         font-weight: 100;
         letter-spacing: 0;
-        line-height: 40px;
+        line-height: 52px;
         z-index: 2;
     }
 
     // Placement de l'image qui se trouve dans la section d'introduction
     img {
         grid-area: cell2;
-        margin: 0px 0 0 17vw;
+        margin: 1vw 0 0 1vw;
+        height: 7vw;
+        position: absolute;
     }
 
-    @keyframes img {
-        0% {
-            transform: rotateY(0deg);
-            animation-timing-function: linear;
-        }
-        25% {
-            transform: rotateY(-90deg);
-            animation-timing-function: linear;
-        }
-        75% {
-            transform: rotateY(90.8945deg);
-            animation-timing-function: linear;
-        }
-        100% {
-            transform: rotateY(0.894219deg);
-            animation-timing-function: linear;
-        }
-    }
-    img {
-        animation: 8s linear 0s 1 normal forwards running img;
-        animation-iteration-count: infinite;
-    }
+   
 
     // Placement et personnalisation du bouton qui se trouve dans la section d'introduction
     button {
@@ -103,6 +82,122 @@
         color: red;
     }
 }
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+@keyframes sideWays { 
+    0% {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    100% {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
+/* ANIMATIONS */
+
+
+
+
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 75%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(2.2);
+}
+
+  
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	
+    height: 10vw;
+    position: absolute;
+    width: 10vw;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 10vw;
+	position: absolute;
+	width: 10vw;
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //---------- Partie du code pour le format mobile-------------------------
 @media screen and (max-width: 573px) {
@@ -164,25 +259,5 @@
 }
 
 @media (max-width: 1189px) and (min-width: 574px) {
-    .Intro {
-        margin: 120px 0px 0 310px;
-        height: 440px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "cell1"
-            "cell2";
-
-        // Placement de l'image qui se trouve dans la section d'introduction
-        img {
-            display: none;
-        }
-
-        // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
-        h2 {
-            display: none;
-        }
-    }
+   
 }

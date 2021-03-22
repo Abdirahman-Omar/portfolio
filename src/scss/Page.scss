@@ -4,14 +4,20 @@
 }
 
 body {
-    background: powderblue;
-    width: fit-content;
-    height: auto;
+    background: linear-gradient(
+        14deg
+        , #2914f3, #1be0d7cf);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    // width: 100vw;
+    // height: auto;
 }
 
-//---------- Partie du code pour le format mobile-------------------------
-@media screen and (max-width: 573px) {
-    .Page {
-        width: 1430px;
-    }
-}
+// //---------- Partie du code pour le format mobile-------------------------
+// @media screen and (max-width: 573px) {
+//     body {
+//         width: 100%;
+//     }
+// }
+
+//#001d77, 

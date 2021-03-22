@@ -13,7 +13,9 @@ export default function Competence({ id, nom, couleur, description }) {
         <img src={`images/${id}.png`} alt={id} />
       </div>
       <div className="info">
-        <h2 style={{ backgroundColor: couleur }}>{nom}</h2>
+      
+        <h2 >{nom}</h2>
+       
 
         {menuOuvert && (<div className="boite">
           <img className="imgInterieur" src={`images/${id}.png`} alt={id} />
