@@ -1,60 +1,98 @@
 .Projet {
-    height: 244px;
-    margin: 35px;
+    width: 18vw;
+    height: 16vw;
     padding: 5px;
-    background-color: #444;
     color: white;
-    border: 4px solid black;
     overflow: hidden;
     text-align: center;
     cursor: pointer;
+    transition: transform 0.1s;
+    background-color: #00bfff59;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 
-    img:hover {
-        animation: 4s linear 0s 1 normal forwards running anim;
-        animation-iteration-count: infinite;
-    }
+    -webkit-animation: animateBubble 28s linear infinite, hautbas 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 28s linear infinite, hautbas 2s ease-in-out infinite alternate;
+    animation: animateBubble 28s linear infinite, hautbas 2s ease-in-out infinite alternate;
 
-    @keyframes anim {
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+    @-webkit-keyframes hautbas {
         0% {
-            transform: rotateY(0deg);
-            animation-timing-function: linear;
-        }
-        25% {
-            transform: rotateY(-90deg);
-            animation-timing-function: linear;
-        }
-        75% {
-            transform: rotateY(90.8945deg);
-            animation-timing-function: linear;
+            margin-top: 0px;
         }
         100% {
-            transform: rotateY(0.894219deg);
-            animation-timing-function: linear;
+            margin-top: 20px;
         }
     }
 
+    @-moz-keyframes hautbas {
+        0% {
+            margin-top: 0px;
+        }
+        100% {
+            margin-top: 20px;
+        }
+    }
+
+    @keyframes hautbas {
+        0% {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        100% {
+            margin-top: 20px;
+        }
+    }
+
+   
+
+    @keyframes bubble-anim {
+        0% {
+          transform: scale(0);
+        }
+        20% {
+          transform: scaleY(0.95) scaleX(1.05);
+        }
+        48% {
+          transform: scaleY(1.1) scaleX(0.9);
+        }
+        68% {
+          transform: scaleY(0.98) scaleX(1.02);
+        }
+        80% {
+          transform: scaleY(1.02) scaleX(0.98);
+        }
+         100% {
+          transform: scale(1);
+          transition: transform 0.1s;
+        }
+      }
+
+
     img {
-        height: 159px;
-        width: 240px;
-        margin: 20px 0 0px 2px;
+        height: 9vw;
+        width: 10vw;
+        border-radius: 15%;
+        margin: 35px 0 0px 2px;
     }
     h2 {
         font-family: "Rockwell";
-        font-size: 35px;
-        margin: 25px 0 0 -30px;
-        /* border-style: solid; */
-        border-top: 5px solid black;
-        width: 365px;
+        font-size: 1.5vw;
+        margin: 0vw 0 0 0vw;
     }
 
-    h1 {
-        margin: -95px 0 0 195px;
 
+    h1 {
+        margin: 1vw 0 0 16vw;
         color: white;
         font-family: "Proxima Nova";
         border-bottom: 5px solid white;
         width: 18vw;
-        font-size: 50px;
+        font-size: 3vw;
         font-weight: 800;
         letter-spacing: 0;
         line-height: 50px;
@@ -63,28 +101,53 @@
 
     .boite {
         position: fixed;
-        top: 165px;
-        left: 35vw;
-        width: 30vw;
-        height: 19vw;
+        top: 50px;
+        left: 25vw;
+        width: 50vw;
+        height: 43vw;
         z-index: 1;
-        background-color: #444;
-        border: 4px solid black;
+        background-color: #00bffffc;
         cursor: default;
+        border-radius: 50%;
+        transition: transform 0.1s;
+        //  animation: popup 0.5s linear  ; 
+
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+        animation: bubble-anim 1s linear;
     }
 
+    a{
+        left: 17vw;
+        top: 2vw;
+        opacity: 0;
+        font-size: 14vw;
+        position: absolute;
+    }
+    @keyframes popup {
+        0%{
+          transform: scale(0);
+        }
+       
+        100%{
+          transform: scale(1);
+          transition: transform 0.1s;
+        }
+      }
+
     .imgInterieur {
-        height: 150px;
-        margin: 11px 0 0px -383px;
-        width: 170px;
-        /* border-style: solid; */
-        border: 4px solid black;
+        height: 13vw;
+        margin: 83px 0 0px 0px;
+        width: 17vw;
+      
     }
 
     .description {
-        margin: 45px 0 0 50px;
-        width: 25vw;
-        font-size: 20px;
+        margin: 1vw 0 0 7vw;
+        width: 36vw;
+        font-size: 1.5vw;
         font-family: "Rockwell";
     }
 
@@ -93,84 +156,90 @@
         top: 10px;
         right: 20px;
         cursor: pointer;
+        width: 5vw;
+        padding: 5px 5px 5px 5px;
+        height: 5vw;
+        color: white;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
     }
+
+    
 }
 
 .Projet:hover {
-    background-color: white;
+    background-color: #00bffffc;
 }
 
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
     .Projet {
-        height: 365px;
-        margin: 35px 0 0 87px;
-        width: 310px;
-        padding: 5px;
-        background-color: #444;
-        color: white;
-        border: 4px solid black;
-        overflow: hidden;
-        text-align: center;
+        width: 38vw;
+        height: 34vw;
 
         img {
-            height: 255px;
-            width: 240px;
-            margin: 20px 0 0px 2px;
+            height: 21vw;
+            width: 21vw;
+            border-radius: 24%;
+            margin: 8px 0 0px 2px;
         }
-        h2 {
-            font-family: "Rockwell";
-            font-size: 33px;
-            margin: 42px 0 0 -4px;
-            /* border-style: solid; */
-            border-top: 5px solid black;
-            width: 329px;
-        }
-
         h1 {
-            margin: 0px 0 0 145px;
+            margin: -3vw 0 0 17vw;
             color: white;
-            font-family: "Proxima Nova";
+            font-family: "Rockwell";
             border-bottom: 5px solid white;
-            width: 200vw;
-            font-size: 73px;
+            width: 60vw;
+            font-size: 5vw;
             font-weight: 800;
             letter-spacing: 0;
-            line-height: 128px;
+            line-height: 50px;
             grid-area: cell2;
         }
 
+        h2 {
+            font-family: "Rockwell";
+            font-size: 3.7vw;
+            margin: 0vw 0 0 0vw;
+        }
+
         .boite {
-            position: fixed;
-            top: 490px;
-            left: 65vw;
-            width: 292vw;
-            height: 1065px;
-            z-index: 1;
-            background-color: #444;
-            border: 4px solid black;
-            z-index: 10;
+            top: 170px;
+            left: 4vw;
+            width: 90vw;
+            height: 90vw;
+        }
+
+        a{
+            left: 27vw;
+            top: 4vw;
+            opacity: 0;
+            font-size: 32vw;
+            position: absolute;
         }
 
         .imgInterieur {
-            height: 450px;
-            width: 600px;
-            margin: 20px 0 0px -20vw;
-            /* border-style: solid; */
-            border: 4px solid black;
+            height: 31vw;
+            margin: 45px 0 0px 0px;
+            width: 43vw;
+        
+           
         }
 
         .description {
-            margin: 45px 0 0 82px;
-            width: 240vw;
-            font-size: 36px;
+            margin: 1vw 0 0 12vw;
+            width: 65vw;
+            font-size: 3.5vw;
+            font-family: "Rockwell";
         }
+        
 
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            height: 135px;
-            width: 125px;
-        }
+        // .close {
+        //     position: absolute;
+        //     top: 10px;
+        //     right: 20px;
+        //     height: 135px;
+        //     width: 125px;
+        // }
     }
 }

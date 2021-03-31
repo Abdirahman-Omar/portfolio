@@ -1,17 +1,19 @@
 import './scss/Entete.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
-
+import { useState } from 'react';
+import Button from '@material-ui/core/Button';
 
 export default function Entete(props) {
 
   // gestion de l'état du menu mobile 
-  
+  const [menuOuvert, setMenuOuvert] = useState(false);
+  const [couleur, setCouleur] = useState('#090');
 
   return (
     <header className="Entete">
       <nav>
 
-        <a href="#listeCompetence" class="burger menuCache" ><GiHamburgerMenu size={150} /></a>
+        <li class="burger menuCache" onClick={() => setMenuOuvert(!menuOuvert)}><GiHamburgerMenu size={50} /></li>
         <i></i>
         <div class="custom-shape-divider-top-1614716716">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -19,25 +21,26 @@ export default function Entete(props) {
           </svg>
         </div>
 
-       
+        
 
         <ul className="navUtil">
           <li><a href="#Introduction">Introduction</a></li>
           <li><a href="#listeCompetence">Compétences</a></li>
           <li><a href="#listeProjet"> Projets</a></li>
-          <li><a href="#basDePage">Coordonnées</a></li>
+          <li><a href="#basDePage">Coordonées</a></li>
+          <Button onClick={() => setCouleur( couleur)} color="primary"></Button>
         </ul>
 
         {/* on ouvre ou on ferme le menu selon l'état */}
-       {/* <div className="leMenu">
-          <ul>
+        {menuOuvert && (<div className="leMenu">
+          <ul className="navMobile">
 
-            <li><a href="#listeCompetence">Introduction</a></li>
-            <li><a href="#listeCompetence">Compétences</a></li>
-            <li><a href="#listeCompetence"> Projets</a></li>
-            <li><a href="#listeCompetence">Coordonnées</a></li>
+            <li><a href="#Introduction" onClick={() => setMenuOuvert(!menuOuvert)}>Introduction</a></li>
+            <li><a href="#listeCompetence" onClick={() => setMenuOuvert(!menuOuvert)}>Compétences</a></li>
+            <li><a href="#listeProjet" onClick={() => setMenuOuvert(!menuOuvert)}> Projets</a></li>
+            <li><a href="#basDePage" onClick={() => setMenuOuvert(!menuOuvert)}>Coordonnées</a></li>
           </ul>
-        </div> */}
+        </div>)}
 
       </nav>
     </header>

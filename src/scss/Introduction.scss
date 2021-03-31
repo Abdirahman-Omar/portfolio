@@ -5,63 +5,45 @@
     margin: 150px 0px 0 6vw;
     height: 50vh;
     width: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0px 0px;
-    gap: 0px 0px;
-    grid-template-areas:
-        "cell1 cell2"
-        "cell3 .";
+    z-index: 2;
 
     // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
     h1 {
-        margin: 20px 0 0 1vw;
+        margin: 20px 0 0 0.5vw;
         color: white;
         font-family: "Rockwell";
-        font-size: 70px;
-        font-weight: 800;
-        letter-spacing: 0;
-        line-height: 50px;
+        font-size: 6vw;
+        font-weight: 00;
+        /* letter-spacing: 0; */
+        line-height: 0px;
         grid-area: cell1;
-    }
-
-    h2 {
-    color: #000000;
-    font-family: "Rockwell";
-    font-size: 5em;
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 0vh;
-    grid-area: cell2;
-    display: none;
     }
 
     // Placement et personnalisation de la description qui se trouve dans la section d'introduction
     .description {
-        margin: 17vh 0vw 0px -32vw;
-        grid-area: cell2;
+        margin: 16vh 0vw 0px 0vw;
+        grid-area: cell1;
         height: auto;
         width: 51vw;
         color: white;
+        -webkit-text-fill-color: floralwhite;
+        -webkit-text-stroke-width: 1px;
         font-family: "Rockwell";
         padding: 0 0 0 15px;
         font-size: 3vw;
         font-weight: 100;
         letter-spacing: 0;
-        line-height: 52px;
+        line-height: 65px;
         z-index: 2;
     }
 
     // Placement de l'image qui se trouve dans la section d'introduction
     img {
-        grid-area: cell2;
-        margin: 1vw 0 0 1vw;
+        margin: 2vw 0 0 2.3vw;
+        height: 8vw;
         height: 7vw;
         position: absolute;
     }
-
-   
 
     // Placement et personnalisation du bouton qui se trouve dans la section d'introduction
     button {
@@ -83,21 +65,14 @@
     }
 }
 
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-@keyframes sideWays { 
+@keyframes sideWays {
     0% {
         margin-top: 0px;
         margin-left: 0px;
     }
-    
+
     100% {
         margin-top: 20px;
         margin-left: 50px;
@@ -106,158 +81,123 @@
 
 /* ANIMATIONS */
 
-
-
-
-
 .x3 {
     -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 75%;
-	top: 40%;
-	
-	-webkit-transform: scale(0.7);
-	-moz-transform: scale(0.7);
-	transform: scale(2.2);
+    -moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+    left: 70%;
+    top: 20vw;
+
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(2.2);
 }
 
-  
 /* OBJECTS */
 
 .bubble {
     -webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
     -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	
-    height: 10vw;
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+    height: 13vw;
     position: absolute;
-    width: 10vw;
+    width: 13vw;
 }
 
 .bubble:after {
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    background: -moz-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 70%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        radial,
+        center center,
+        0px,
+        center center,
+        100%,
+        color-stop(0%, rgba(255, 255, 255, 0.5)),
+        color-stop(70%, rgba(255, 255, 255, 0))
+    ); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 70%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 70%
+    ); /* Opera 12+ */
+    background: -ms-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 70%
+    ); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
     -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	
-	content: "";
-    height: 10vw;
-	position: absolute;
-	width: 10vw;
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+    content: "";
+    height: 13vw;
+    position: absolute;
+    width: 13vw;
 }
-
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //---------- Partie du code pour le format mobile-------------------------
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
     // Placement du section d'introduction avec un display grid d'une colonne et de deux rangés
     .Intro {
-        margin: 120px 0px 0 310px;
-        height: 440px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "cell1"
-            "cell2";
+        margin: 60px 0px 0 6vw;
 
-        // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
-        h1 {
-            height: 100px;
-            /* width: 917px; */
-            margin: 130px 0 0 40px;
-            color: #000000;
-            font-family: "Proxima Nova";
-            font-size: 130px;
-            font-weight: 800;
-            letter-spacing: 0;
-            line-height: 83px;
-            grid-area: cell1;
-        }
-
-        // Placement et personnalisation de la description qui se trouve dans la section d'introduction
-        .description {
-            margin: 66px 0px 0 -125px;
-            grid-area: cell2;
-            height: 635px;
-            width: 995px;
-            color: white;
-            background-color: #009640;
-            font-family: "Proxima Nova";
-            font-size: 68px;
-            font-weight: 100;
-            letter-spacing: 0;
-            line-height: 78px;
-        }
-
-        // Placement de l'image qui se trouve dans la section d'introduction
-        img {
-            margin: 0px 0 0 190px;
+        .bubble {
             display: none;
         }
+        //     // Placement et personnalisation du titre qui se trouve dans la section d'introduction.
+        h1 {
+            margin: 0px 0 0 19vw;
+            color: white;
+            font-family: "Rockwell";
+            font-size: 15vw;
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 50px;
+        }
 
-        // Placement du texte de contact qui se trouve dans la section d'introduction
-        .contact {
-            grid-area: cell2;
-            margin: 393px 0px 0px 30px;
-            color: red;
-            font-size: 45px;
+        //     // Placement et personnalisation de la description qui se trouve dans la section d'introduction
+        .description {
+            height: auto;
+            text-align: center;
+            width: 85vw;
+            color: white;
+            font-family: "Rockwell";
+            -webkit-text-stroke-width: 0px;
+            padding: 0 0 0 0;
+            margin: 34px 0 0 7px;
+            font-size: 5.5vw;
+            font-weight: 100;
+            letter-spacing: 0;
+            line-height: 55px;
+            z-index: 2;
         }
     }
-}
-
-@media (max-width: 1189px) and (min-width: 574px) {
-   
 }

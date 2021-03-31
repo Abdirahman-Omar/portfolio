@@ -3,6 +3,7 @@
       "id":"pro0001",
       "nom":"Site du TIM",
       "couleur":"green",
+      "lien":"https://tim2020.netlify.app/",
       "description":"Un de mes grand projets que j'ai fait avec mon équipe de web. Nous avions pour but de refaire le site web de la technique d'intégration en multimédia de Maisonneuve."
     },
     {
@@ -15,31 +16,34 @@
       "id":"pro0003",
       "nom":"Gundomize",
       "couleur":"red",
-      "description":"Gundomize est un jeu de tir à la premiere personne jouant à deux personnes. Le but du jeu est est de marquer le plus de point en éliminant son adversaire avant temps imparti. Le 'twist', les armes de chaque joueurs changent aléatoirement, rendant ainsi la jouabilité du jeu dynamique. Je n'ai pas pu créer ce jeu sans une équipe bien organiser. "
+      "lien":"https://jinscarlet.itch.io/gundomize",
+      "description":"Gundomize est un jeu de tir à la premiere personne jouant à deux personnes. Le but du jeu est est de marquer le plus de point en éliminant son adversaire avant temps imparti. Le 'twist', les armes de chaque joueurs changent aléatoirement.  "
     },
     {
       "id":"pro0004",
       "nom":"Frank le trancheur",
       "couleur":"red",
-      "description":"Ceci est mon tout premier jeu créer à partir de Unity. Frank le trancheur est un jeu hack and slash "
+      "description":"Ceci est mon tout premier jeu créer à partir de Unity. Frank le trancheur est un jeu hack and slash. Le but est d'échaper la horde de zombie avant la temps limité. "
     },
     {
       "id":"pro0005",
       "nom":"Perceuse 3D",
       "couleur":"lightblue",
+      "lien":"https://www.youtube.com/watch?v=EB4UYeibezs",
       "description":"Un vehicule imaginaire que j'ai conceptualiser pour mon premier cours de 3D au Collège de Maisonneuve. Le thème était de créer de un vehicule en forme d'animaux. Donc, j'ai fait une perceuse en forme d'abeille."
     },
     {
       "id":"pro0006",
       "nom":"Zralok",
       "couleur":"lightblue",
+      "lien":"https://www.youtube.com/watch?v=ZphS69qNamA",
       "description":"Homme requin que j'ai conceptualiser avec le logiciel Maya 3D. Ce projet était pour le cours mon cours de scénarisation dont le but était de créer un personnage dans un univers fictif. "
     },
     {
       "id":"pro0007",
       "nom":"Captain McClean",
       "couleur":"purple",
-      "description":"Un projet que j'ai réaliser en équipe dans le cadre du jour de la terre en 2019. Captain McClean est une idée de jeu où le but du jeu est de terraser des déchets mutant qui menace la planete."
+      "description":"Un projet que j'ai réaliser en équipe dans le cadre du jour de la terre en 2019. Captain McClean est une idée de jeu où le but du jeu est de terraser des déchets mutant qui menace la planète."
     },
     {
       "id":"pro0008",

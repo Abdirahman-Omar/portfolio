@@ -5,27 +5,50 @@ import ListeCompetence from './ListeCompetence';
 import ListeProjet from './ListeProjet';
 import BasDePage from './BasDePage'
 
+
 export default function Page() {
   return (
     <div className="Page">
-          <ul class="circles">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-          </ul>
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
 
-       <Entete></Entete>
-       <Introduction/>
-       <ListeCompetence/>
-       <ListeProjet/>
-       <BasDePage></BasDePage>
+        {/* Compétences */}
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+        
+        {/* Projets */}
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+       
+
+      </ul>
+      <Entete></Entete>
+      <Introduction />
+      <ListeCompetence />
+      <ListeProjet />
+
+      <BasDePage/>
     </div>
   );
 }

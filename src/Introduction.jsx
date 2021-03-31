@@ -14,6 +14,6 @@ export default function Introduction(props) {
       <img src="images/logo.png" alt=" logo" /> 
       </div>
     </div>
-    // Centrer le tout au milieu
+    
   );
 }

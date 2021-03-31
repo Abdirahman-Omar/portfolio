@@ -2,17 +2,10 @@
 
 .Entete {
     margin: 2vw 50px 0px 0px;
-    padding: 0px 0 0 0;
-    /* width: 100vw; */
-    background-color: none;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
     width: auto;
-    color: #000000;
     font-family: "Rockwell";
-    font-size: 2em;
-    letter-spacing: 0;
     line-height: 17px;
 
     // Lorsque nous sommes en format desktop, il faut cacher le menu burger
@@ -20,17 +13,44 @@
         display: none;
     }
 
-      
     // Positionner le menu toggle en haut à gauche lorsque nous sommes en format mobile
     .leMenu {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 95%;
+        top: 25%;
+        left: 35px;
+        width: 86vw;
+        height: 85vw;
         z-index: 100;
-        background-color: rgb(243, 199, 53);
+        background-color: #00bfffed;
+        border-radius: 50%;
+        animation: bubble-anim 2s linear;
+
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
     }
+
+    @keyframes bubble-anim {
+        0% {
+          transform: scale(0);
+        }
+        20% {
+          transform: scaleY(0.95) scaleX(1.05);
+        }
+        48% {
+          transform: scaleY(1.1) scaleX(0.9);
+        }
+        68% {
+          transform: scaleY(0.98) scaleX(1.02);
+        }
+        80% {
+          transform: scaleY(1.02) scaleX(0.98);
+        }
+         100% {
+          transform: scale(1);
+          transition: transform 0.1s;
+        }
+      }
 
     .custom-shape-divider-top-1614716716 {
         position: absolute;
@@ -104,21 +124,8 @@
 }
 
 //---------- Partie du code pour le format mobile-------------------------
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
     .Entete {
-        margin: 0px 0px 0px 0px;
-        padding: 30px;
-        width: 100%;
-        background-color: none;
-        display: flex;
-        align-items: center;
-        width: auto;
-        color: #000000;
-        font-family: "Rockwell";
-        font-size: 20px;
-        letter-spacing: 0;
-        line-height: 17px;
-
         // Lorsque nous sommes en format mobile, il faut afficher le menu burger
         .menuCache {
             display: flex;
@@ -129,61 +136,66 @@
 
         // Placement et personnalisation du bouton burger qui se trouve en haut à droite en format mobile
         .burger {
-            position: fixed;
-            top: 70px;
-            right: -60vw;
-            width: 100vw;
-            height: 102vh;
-            color: black;
+            left: 25%;
+            position: relative;
+            padding: 20px 20px 20px 20px;
+    
+            color: white;
             z-index: 2;
+            border-radius: 50%;
+
+            -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+            -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
         }
 
         // Placement et personnalisation des ul qui se trouve dans le menu en format mobile
         ul {
             padding: 0;
             list-style: none;
-            font-family: "Proxima Nova";
+            font-family: "Rockwell";
+            margin: 0vw 0 0 10vw;
             display: block;
 
-            li:first-of-type {
-                padding: 43px 0px 1px 60px;
-                width: 415px;
-                line-height: 50px;
-                font-size: 41px;
+            li:not(:last-of-type) {
+                margin: 0 0 0 4vw;
+            }
+
+            li:not(:first-of-type) {
+                padding-left: 0px;
+            }
+
+            li:nth-of-type(2) {
+                margin: 0 0 0 2vw;
+            }
+
+            li:nth-of-type(3) {
+                margin: -6px 0 0 12vw;
+            }
+
+            li:nth-of-type(4) {
+                margin: 0 0 0 2vw;
             }
 
             a {
-                color: #000000;
-                font-family: "Proxima Nova";
-                text-decoration: none;
-                padding: 0px 0px 0px 60px;
+                color: white;
+                font-family: "Rockwell";
+                font-size: 6vw;
             }
             li {
-                padding: 90px 7px 0px 0px;
-                font-size: 45px;
+                padding: 40px 7px 0px 0px;
+                /* margin: 0 0 0 9vw;*/
             }
 
             &.navUtil {
                 margin-left: auto;
                 display: none;
             }
-            // Placement du logo en haut à gauche
-            .logo {
-                display: none;
-            }
+           
+        }
+        .navMobile {
+            margin: 8vw 0 0 22vw;
 
-            // Redimensionner le logo
-            img {
-                display: none;
-            }
         }
     }
-}
-
-@media (max-width: 1706px) and (min-width: 1190px) {
-    
-}
-
-@media (max-width: 1189px) and (min-width: 574px) {
-    
 }

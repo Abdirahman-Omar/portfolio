@@ -1,121 +1,140 @@
+
 // Code de style pour le bas de la page web
 
 .BasDePage {
-    height: 349px;
-    background: darkslategrey;
-    margin: 181px 0 0 -5px;
-
-    // Personnalisation de titre du bas de la page
-    h1 {
-        margin: 0px 0 0 200px;
-        padding-top: 17px;
-        height: 78px;
-        width: 0px;
-        color: white;
-        font-family: "Proxima Nova";
-        font-size: 50px;
-        font-weight: 600;
-        letter-spacing: 0;
-        line-height: 39px;
-        text-align: center;
-    }
+    margin: 4vw 0 0 0vw;
 
     // Personnalisation la description du bas de la page
     p {
-        margin: 49px 0 0 0px;
-        color: white;
-        font-size: 1.5em;
-        font-family: "Proxima Nova";
-        text-align: center;
+        margin: 4vw 0 0 0vw;
+        padding: 0 0 40px 0px;
+    color: white;
+    font-size: 1.5em;
+    font-family: "Proxima Nova";
+    text-align: center;
     }
 
     // Placement des médias sociaux
     .medias {
-        margin: -14px 0px 0 150px;
-        display: grid;
-        // Espacement des médias sociaux
+        margin: 0px 0px 0 32vw;
+        padding: 0 0 0 0px;
+        width: 35vw;
+        justify-content: space-evenly;
+        display: flex;
+
+//         -webkit-animation: hautbas 2s ease-in-out infinite alternate;
+//   -moz-animation:  hautbas 2s ease-in-out infinite alternate;
+//   animation:  hautbas 2s ease-in-out infinite alternate;
     }
 
     .linkedin {
-        padding: 0 20px 0 0;
-        width: 298px;
+        padding: 13px 15px 10px 13px;
         color: white;
-        font-size: 30px;
         text-decoration: none;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #00bfff59;
+        transition : transform 0.5s;
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
     }
 
     .outlook {
-        padding: 0 20px 0 0;
-        width: 365px;
+        padding: 14px 8px 0 12px;
+        width: 58px;
         color: white;
         font-size: 30px;
+        background-color: #00bfff59;
         text-decoration: none;
+        transition : transform 0.5s;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
     }
 
     .gmail {
-        padding: 0 20px 0 0;
-        width: 438px;
+        padding: 14px 19px 8px 18px;
         color: white;
         font-size: 30px;
         text-decoration: none;
+        background-color: #00bfff59;
+        transition : transform 0.5s;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
     }
+
+
+    .github {
+        padding: 14px 19px 8px 18px;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        background-color: #00bfff59;
+        transition : transform 0.5s;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    }
+
+    
+      
+
 }
 
+.github:hover {
+    transform: scale(1.5);
+    transition : transform 0.5s;
+  }
+
+  .gmail:hover {
+    transform: scale(1.5);
+    transition : transform 0.5s
+  }
+
+  .outlook:hover {
+    transform: scale(1.5);
+    transition : transform 0.5s
+  }
+
+  .linkedin:hover {
+    transform: scale(1.5);
+    transition : transform 0.5s
+  }
+
 //---------- Partie du code pour le format mobile-------------------------
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
     .BasDePage {
-        height: 349px;
-        margin: 181px 0 0 -5px;
+        margin: 569px 0 0 5px;
 
-        // Personnalisation de titre du bas de la page
-        h1 {
-            margin: 0px 0 0 400px;
-            padding-top: 17px;
-            height: 78px;
-            width: 0px;
-            color: white;
-            font-family: "Proxima Nova";
-            font-size: 90px;
-            font-weight: 600;
-            letter-spacing: 0;
-            line-height: 39px;
-            text-align: center;
-        }
 
-        // Personnalisation la description du bas de la page
-        p {
-            margin: 40px 0 0 306px;
-            height: 22px;
-            width: 210vw;
-            color: #000000;
-            font-family: "Proxima Nova";
-            font-size: 32px;
-            text-align: center;
-        }
-
-        // Placement des médias sociaux
         .medias {
-            margin: -11px 0px 0 474px;
-            display: grid;
-            // Espacement des médias sociaux
+            margin: 0px 0px 0 33vw;
+            padding: 0 0 0 0px;
+            width: 35vw;
+            justify-content: space-evenly;
+            display: flex;
         }
 
-        .linkedin {
-            padding: 0 20px 0 0;
-            width: 500px;
-            color: white;
-            font-size: 55px;
-            text-decoration: none;
+        p {
+            margin: 8vw 0 0 9vw;
+            font-size: 4vw;
+            width: 85%;
         }
-
-        .outlook {
-            padding: 0 20px 0 0;
-            color: black;
-        }
-
-        .gmail {
-            padding: 0 20px 0 0;
-            color: black;
-        }
+    
     }
 }

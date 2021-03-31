@@ -4,17 +4,20 @@
 }
 
 body {
-    // background: powderblue;
-    // background: linear-gradient(
-    //     224deg
-    //     , black, transparent);
     height: auto;
 }
 
 .circles{
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // overflow: hidden;
+
+        /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -24,9 +27,12 @@ body {
     position: absolute;
     display: block;
     list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    width:40px;
+    height: 40px;
+    border-radius:50%;
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #ffffff6e;
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #ffffff6e;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #ffffff47;
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -108,6 +114,164 @@ body {
     animation-duration: 11s;
 }
 
+//------- Compétences--------------------
+
+.circles li:nth-child(11){
+    left: 25%;
+    bottom: -100%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(12){
+    left: 10%;
+    bottom: -100%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(13){
+    left: 70%;
+    bottom: -100%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(14){
+    left: 40%;
+    bottom: -100%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(15){
+    left: 65%;
+    bottom: -100%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(16){
+    left: 75%;
+    bottom: -100%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(17){
+    left: 35%;
+    bottom: -100%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(18){
+    left: 50%;
+    bottom: -100%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(19){
+    left: 20%;
+    bottom: -100%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+//-------------
+
+
+.circles li:nth-child(20){
+    left: 25%;
+    bottom: -200%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(21){
+    left: 10%;
+    bottom: -200%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(22){
+    left: 70%;
+    bottom: -200%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(23){
+    left: 40%;
+    bottom: -200%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(24){
+    left: 65%;
+    bottom: -200%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(25){
+    left: 75%;
+    bottom: -200%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(26){
+    left: 35%;
+    bottom: -200%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(27){
+    left: 50%;
+    bottom: -200%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(28){
+    left: 20%;
+    bottom: -200%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
 
 
 @keyframes animate {
@@ -115,21 +279,34 @@ body {
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
+       
     }
 
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 1;
-        border-radius: 50%;
+        
     }
 
 }
 
 
 //---------- Partie du code pour le format mobile-------------------------
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
     body {
-        width: 100%;
+   
     }
+
+    .circles li:nth-child(6) {
+        display: none;
+    }
+
+    .circles li:nth-child(10) {
+         left: 0%; 
+      
+    }
+
+    .circles li:nth-child(16) {
+       display: none;
+   }
 }

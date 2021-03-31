@@ -2,14 +2,13 @@
   width: 18vw;
     height: 16vw;
   padding: 5px;
-  /* background-color: #4449; */
   color: white;
-  /* border: 4px solid black; */
-  overflow: hidden;
+  position: relative;
+    left: 6vw;
   text-align: center;
   cursor: pointer;
   transition : transform 0.5s;
-
+  background-color: #00bfff59;
   -webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -58,16 +57,15 @@
   }
 
   img {
-    height: 9vw;
-    width: 10vw;
-    margin: 20px 0 0px 2px;
+    height: 10vw;
+    margin: 30px 0 0px 2px;
     
   }
 
   h2 {
     font-family: "Rockwell";
-    font-size: 35px;
-    margin: 26px 0 0 0vw;
+    font-size: 1.8vw;
+    margin: 0 0 0 0vw;
   }
 
   h1 {
@@ -83,39 +81,7 @@
     grid-area: cell2;
   }
 
-  .boite {
-    position: fixed;
-    top: 165px;
-    left: 35vw;
-    width: 30vw;
-    height: 375px;
-    z-index: 1;
-    background-color: #444;
-    border: 4px solid black;
-    cursor: default;
-  }
-
-  .imgInterieur {
-    height: 150px;
-    margin: 20px 0 0px -20vw;
-    /* border-style: solid; */
-    border: 4px solid black;
-  }
-
-  .description {
-    margin: 80px 0 0 40px;
-    width: 25vw;
-    font-family: "Rockwell";
-    font-size: 20px;
-  }
-
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-  }
-
+  
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -133,25 +99,6 @@
       margin-top: 20px;
       margin-left: 50px;
   }
-}
-
-/* ANIMATIONS */
-
-
-
-
-
-.x4 {
-  -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
--moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-
-left: 75%;
-top: 40%;
-
--webkit-transform: scale(0.7);
--moz-transform: scale(0.7);
-transform: scale(2.2);
 }
 
 
@@ -182,79 +129,72 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 25
 
 .Competence:hover {
   transform: scale(1.1);
+  background-color: #00bffffc;
   transition : transform 0.5s
 }
 
 //---------- Partie du code pour le format mobile-------------------------
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
   .Competence {
-    height: 365px;
-    margin: 35px 0 0 87px;
-    width: 310px;
-    padding: 5px;
-    background-color: #444;
-    color: white;
-    border: 4px solid black;
-    overflow: hidden;
-    text-align: center;
+    width: 38vw;
+    height: 34vw;
 
+    position: relative;
+    left: 22vw;
     img {
-      height: 256px;
-      margin: 20px 0 0px 2px;
+      height: 20vw;
+    margin: 10px 0 0px 0px;
     }
     h2 {
       font-family: "Rockwell";
-      font-size: 53px;
-      margin: 25px 0 0 -4px;
-      /* border-style: solid; */
-      border-top: 5px solid black;
-      width: 329px;
+    font-size: 5vw;
+    margin: 0 0 0 0vw;
     }
 
-    h1 {
-      margin: 40px 0 0 255px;
-      color: white;
-      font-family: "Proxima Nova";
-      border-bottom: 5px solid white;
-      width: 124vw;
-      font-size: 100px;
-      font-weight: 800;
-      letter-spacing: 0;
-      line-height: 50px;
-      grid-area: cell2;
-    }
+    // h1 {
+    //   margin: 40px 0 0 255px;
+    //   color: white;
+    //   font-family: "Proxima Nova";
+    //   border-bottom: 5px solid white;
+    //   width: 124vw;
+    //   font-size: 100px;
+    //   font-weight: 800;
+    //   letter-spacing: 0;
+    //   line-height: 50px;
+    //   grid-area: cell2;
+    // }
 
-    .boite {
-      position: fixed;
-      top: 490px;
-      left: 65vw;
-      width: 292vw;
-      height: 1065px;
-      z-index: 1;
-      background-color: #444;
-      border: 4px solid black;
-      z-index: 10;
-    }
+    // .boite {
+    //   position: fixed;
+    //   top: 490px;
+    //   left: 65vw;
+    //   width: 292vw;
+    //   height: 1065px;
+    //   z-index: 1;
+    //   background-color: #444;
+    //   border: 4px solid black;
+    //   z-index: 10;
+    // }
 
-    .imgInterieur {
-      height: 360px;
-      margin: 20px 0 0px -20vw;
-      /* border-style: solid; */
-      border: 4px solid black;
-    }
+    // .imgInterieur {
+    //   height: 360px;
+    //   margin: 20px 0 0px -20vw;
+    //   /* border-style: solid; */
+    //   border: 4px solid black;
+    // }
 
-    .description {
-      margin: 100px 0 0 82px;
-      width: 240vw;
-      font-size: 43px;
-    }
+    // .description {
+    //   margin: 100px 0 0 82px;
+    //   width: 240vw;
+    //   font-size: 43px;
+    // }
 
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      height: 135px;
-      width: 125px;
-    }
+    // .close {
+    //   position: absolute;
+    //   top: 10px;
+    //   right: 20px;
+    //   height: 135px;
+    //   width: 125px;
+    // }
   }
 }

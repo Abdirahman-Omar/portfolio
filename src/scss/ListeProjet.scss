@@ -2,186 +2,202 @@
 
 // Placement de la partie services avec un display grid de deux colonnes et de quatre rangés
 .ListeProjet {
-    margin: 0px auto; 
-    width: 85vw;
-    display: flex;
-    
+    margin: 0 0 0 10vw;
     justify-content: flex-start;
     list-style: none;
-   
-
+    z-index: 2;
+    transition: transform 0.1s;
     // Placement et personnalisation du titre qui se trouve au milieu dans la partie Projet.
     h1 {
-        margin: 24px 0 0 104px;
+        margin: 24px 0 0 -3vw;
         color: white;
-        font-family: "Proxima Nova";
-        font-size: 70px;
+        font-family: "Rockwell";
+        font-size: 5vw;
         font-weight: 800;
         letter-spacing: 0;
-        line-height: 50px;
+        line-height: 152px;
         grid-area: cell2;
     }
 
     .Liste {
         list-style: none;
         display: flex;
-        /* flex-wrap: wrap; */
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        /* margin: 26px 313px 0 0px; */
-        padding: 0;
+        // animation:  bulle1 2s ease-in-out infinite alternate;
+        flex-flow: wrap;
+        margin: 50px 0 0 0;
+    }
+
+    .Liste2 {
+        list-style: none;
+        display: flex;
+        // overflow: hidden;
+        margin: 0px 0px 0 0vw;
+        padding: 0px 0px 0px 0px;
+    
     }
 
     li {
-        width: 400px;
+        width: 18vw;
         margin: 0 0 0 0px;
-        padding: 145px 0 0 37px;
+        padding: 145px 0 0 5px;
+        
     }
 
-    // Placement et personnalisation du premier sous-titre.
-    .analyse {
-        margin: 140px 0px 0px -55vw;
-        border-bottom: solid;
-        color: white;
-        font-family: "Proxima Nova";
-        font-size: 25px;
-        font-weight: 600;
-        position: absolute;
-        letter-spacing: 2px;
-        line-height: 29px;
+    .Liste li:nth-of-type(1) {
+        position: relative;
+        top: -6vw;
+    left: -3vw;
+    // animation:  bulle1 2s ease-in-out infinite alternate;
+      
     }
 
-    // Placement et personnalisation du premier sous-titre.
-    .jeu {
-        margin: 532px 0px 0px -55vw;
-        border-bottom: solid;
-        color: white;
-        font-family: "Proxima Nova";
-        font-size: 25px;
-        font-weight: 600;
-        position: absolute;
-        letter-spacing: 2px;
-        line-height: 29px;
+    @keyframes bulle1 { 
+        0% {
+            margin-top: 0px;
+            margin-left: 10px;
+           
+        }
+        50%{
+            margin-right: 10px;
+        }
+        100% {
+            margin-top: 10px;
+            margin-left: 10px;
+           
+        }
     }
-    // Placement et personnalisation du premier sous-titre.
-    .model {
-        margin: 1025px 0px 0px -55vw;
-        border-bottom: solid;
-        color: white;
-        font-family: "Proxima Nova";
-        font-size: 25px;
-        font-weight: 600;
-        position: absolute;
-        letter-spacing: 2px;
-        line-height: 29px;
+
+
+    @keyframes bulle2 { 
+        0% {
+           margin-top: 10px;
+            margin-left: 10px;
+           
+        }
+        50%{
+            
+        }
+        100% {
+            margin-top: 0px;
+            margin-left: -10px;
+           
+        }
     }
-    // Placement et personnalisation du premier sous-titre.
-    .design {
-        margin: 1506px 0px 0px -55vw;
-        border-bottom: solid;
-        color: white;
-        font-family: "Proxima Nova";
-        font-size: 25px;
-        font-weight: 600;
-        position: absolute;
-        letter-spacing: 2px;
-        line-height: 29px;
+
+    .Liste li:nth-of-type(2) {
+       
+        position: relative;
+        top: -6vw;
+    left: 12vw;
+    // animation:  bulle2 2s ease-in-out infinite alternate;
     }
+    .Liste li:nth-of-type(3) {
+       
+        position: relative;
+        top: -6vw;
+    left: 27vw;
+    }
+
+    .Liste li:nth-of-type(4) {
+       
+        position: relative;
+        top: 7vw;
+    left: -41vw;
+    }
+    .Liste li:nth-of-type(5) {
+       
+        position: relative;
+        top: -14vw;
+    right: -48vw;
+    }
+    .Liste li:nth-of-type(6) {
+       
+        position: relative;
+        top: 0vw;
+        right: 21vw;
+    }
+    .Liste li:nth-of-type(7) {
+       
+        position: relative;
+        top: 0vw;
+    right: -27vw;
+    }
+    .Liste li:nth-of-type(8) {
+       
+        position: relative;
+        top: 0vw;
+    right: 25vw;
+    }
+
+   
 }
 
 //---------- Partie du code pour le format mobile-------------------------
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
     // Placement de la partie Projet avec un display grid d'une colonne et de quatre rangés
     .ListeProjet {
-        margin: 280px 0px 0 246px; 
-    width: 100vw;
+        margin: -70px 0 0 10vw;
 
         // Placement et personnalisation du titre qui se trouve au milieu dans la partie services.
         h1 {
-            margin: 110px 0 0 300px;
-            height: 100px;
-            width: 1140px;
-            color: white;
-            font-family: "Proxima Nova";
-            font-size: 90px;
-            font-weight: 800;
-            letter-spacing: 0;
-            line-height: 50px;
-            grid-area: cell1;
+            font-size: 10vw;
+            margin: 40px 0 0 19.4vw;
         }
 
-        // Placement et personnalisation du premier sous-titre.
-        .analyse {
-            margin: 184px 0px 0px 65px;
-            height: 50px;
-            width: 477px;
-            /* color: #000000; */
-            font-family: "Proxima Nova";
-            font-size: 50px;
-            font-weight: 600;
-            letter-spacing: 0;
-            line-height: 44px;
-            grid-area: cell2;
-        }
-
-        .jeu {
-            margin: 1474px 0px 0px 13vw;
-            border-bottom: solid;
-            width: 175vw;
-            color: white;
-            font-family: "Proxima Nova";
-            font-size: 50px;
-            font-weight: 600;
-            position: absolute;
-            letter-spacing: 2px;
-            line-height: 73px;
-        }
-
-        .model {
-            margin: 2788px 0px 0px 8vw;
-            border-bottom: solid;
-            color: white;
-            font-family: "Proxima Nova";
-            font-size: 50px;
-            width: 318px;
-            font-weight: 600;
-            position: absolute;
-            letter-spacing: 2px;
-            line-height: 54px;
-        }
-        .design {
-            margin: 4090px 0px 0px 16vw;
-            border-bottom: solid;
-            color: white;
-            font-family: "Proxima Nova";
-            font-size: 50px;
-            width: 459px;
-            font-weight: 600;
-            position: absolute;
-            letter-spacing: 2px;
-            line-height: 50px;
-        }
-        li {
-            width: 400px;
-            margin: 236px 0 0 -247px;
-            padding: 0px 0 0 0px;
-        }
         .Liste {
-            list-style: none;
-            display: flex;
-            /* width: 001px; */
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            margin: 0px 211px 0 -180px;
-            padding: 0;
+            margin: -70px 0 0 0;
+        }
+
+        .Liste li:nth-of-type(1) {
+            position: relative;
+            top: -24vw;
+            left: 0vw;          
+        }
+
+        .Liste li:nth-of-type(2) {
+       
+            position: relative;
+            top: 7vw;
+            left: 17vw;
+        }
+        .Liste li:nth-of-type(3) {
+       
+            position: relative;
+            top: 44vw;
+            left: -38vw;
+        }
+    
+        .Liste li:nth-of-type(4) {
+           
+            position: relative;
+            top: 74vw;
+            left: -21vw;
+        }
+        .Liste li:nth-of-type(5) {
+           
+            position: relative;
+            top: 35vw;
+            right: 0vw;
+        }
+        .Liste li:nth-of-type(6) {
+           
+            position: relative;
+            top: 75vw;
+            right: -18vw;
+        }
+        .Liste li:nth-of-type(7) {
+           
+            position: relative;
+            top: 110vw;
+            right: 37vw;
+        }
+        .Liste li:nth-of-type(8) {
+           
+            position: relative;
+            top: 145vw;
+            right: 20vw;
         }
     }
 }
 
-@media (max-width: 1189px) and (min-width: 574px) {
-    // .ListeProjet {
-    //     h1 {
-    //         margin: 60px 100px auto;
-    //     }
-    // }
-}
+
